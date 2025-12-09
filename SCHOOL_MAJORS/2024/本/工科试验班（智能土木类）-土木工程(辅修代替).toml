@@ -1,0 +1,162 @@
+[[courses]]
+course_code = "CIVL2005F"
+credit = 4.0
+assessment_method = "考试"
+course_name = "结构力学"
+recommended_year_semester = "第二学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "智能土木与海洋工程学院"
+total_hours = 64
+
+[courses.hours]
+theory = 64
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "CIVL2007F"
+credit = 1.5
+assessment_method = "考查"
+course_name = "荷载与结构设计方法"
+recommended_year_semester = "第二学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "智能土木与海洋工程学院"
+total_hours = 24
+
+[courses.hours]
+theory = 24
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "CIVL3006F"
+credit = 2.0
+assessment_method = "考试"
+course_name = "土力学"
+recommended_year_semester = "第二学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "智能土木与海洋工程学院"
+total_hours = 32
+
+[courses.hours]
+theory = 24
+lab = 8
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "CIVL3039F"
+credit = 1.5
+assessment_method = "考试"
+course_name = "结构动力学"
+recommended_year_semester = "第二学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "智能土木与海洋工程学院"
+total_hours = 24
+
+[courses.hours]
+theory = 24
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "CIVL3003F"
+credit = 3.5
+assessment_method = "考试"
+course_name = "混凝土结构基本原理"
+recommended_year_semester = "第三学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "智能土木与海洋工程学院"
+total_hours = 56
+
+[courses.hours]
+theory = 52
+lab = 4
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "CIVL3007F"
+credit = 1.5
+assessment_method = "考试"
+course_name = "基础工程"
+recommended_year_semester = "第三学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "智能土木与海洋工程学院"
+total_hours = 24
+
+[courses.hours]
+theory = 18
+lab = 4
+practice = 0
+exercise = 0
+computer = 2
+tutoring = 0
+[[courses]]
+course_code = "CIVL3008F"
+credit = 4.0
+assessment_method = "考试"
+course_name = "钢结构基本原理及设计"
+recommended_year_semester = "第三学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "智能土木与海洋工程学院"
+total_hours = 64
+
+[courses.hours]
+theory = 64
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "CIVL3010F"
+credit = 2.0
+assessment_method = "考试"
+course_name = "混凝土与砌体结构设计"
+recommended_year_semester = "第三学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "智能土木与海洋工程学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "CIVL3099F"
+credit = 5.0
+assessment_method = "考查"
+course_name = "毕业论文（设计）"
+recommended_year_semester = "第四学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "智能土木与海洋工程学院"
+total_hours = 200
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 5
+exercise = 0
+computer = 0
+tutoring = 0

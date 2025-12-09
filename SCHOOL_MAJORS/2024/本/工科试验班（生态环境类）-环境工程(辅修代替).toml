@@ -1,0 +1,252 @@
+[[courses]]
+course_code = "ENVR3017F"
+credit = 2.0
+assessment_method = "考试"
+course_name = "环境学"
+recommended_year_semester = "第二学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR2002F"
+credit = 3.0
+assessment_method = "考试"
+course_name = "环境工程原理"
+recommended_year_semester = "第二学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 48
+
+[courses.hours]
+theory = 32
+lab = 16
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3008F"
+credit = 2.0
+assessment_method = "考试"
+course_name = "污染控制微生物学"
+recommended_year_semester = "第二学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 32
+
+[courses.hours]
+theory = 20
+lab = 12
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3009F"
+credit = 1.5
+assessment_method = "考试"
+course_name = "环境生态学"
+recommended_year_semester = "第二学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 24
+
+[courses.hours]
+theory = 24
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3003F"
+credit = 1.0
+assessment_method = "考试"
+course_name = "环境影响评价"
+recommended_year_semester = "第三学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 16
+
+[courses.hours]
+theory = 16
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3004F"
+credit = 3.0
+assessment_method = "考试"
+course_name = "大气污染控制工程"
+recommended_year_semester = "第三学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 48
+
+[courses.hours]
+theory = 40
+lab = 8
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3014F"
+credit = 1.0
+assessment_method = "考试"
+course_name = "环境规划与管理"
+recommended_year_semester = "第三学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 16
+
+[courses.hours]
+theory = 16
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3011F"
+credit = 4.0
+assessment_method = "考试"
+course_name = "水污染控制工程"
+recommended_year_semester = "第三学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 64
+
+[courses.hours]
+theory = 64
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3012F"
+credit = 2.0
+assessment_method = "考试"
+course_name = "固体废弃物处理与资源化"
+recommended_year_semester = "第三学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 32
+
+[courses.hours]
+theory = 22
+lab = 10
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3046F"
+credit = 1.0
+assessment_method = "考查"
+course_name = "水污染控制工程课程 设计"
+recommended_year_semester = "第三学年夏季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 40
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 1
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR2004F"
+credit = 1.0
+assessment_method = "考试"
+course_name = "环境工程土建概论与 施工技术"
+recommended_year_semester = "第四学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 16
+
+[courses.hours]
+theory = 16
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3016F"
+credit = 2.0
+assessment_method = "考试"
+course_name = "特种水处理及资源化"
+recommended_year_semester = "第四学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3062F"
+credit = 1.0
+assessment_method = "考试"
+course_name = "环境工程技术经济和 造价管理"
+recommended_year_semester = "第四学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 16
+
+[courses.hours]
+theory = 16
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENVR3099F"
+credit = 5.0
+assessment_method = "考查"
+course_name = "毕业论文（设计）"
+recommended_year_semester = "第四学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "生态环境学院"
+total_hours = 200
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 5
+exercise = 0
+computer = 0
+tutoring = 0
