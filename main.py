@@ -26,7 +26,7 @@ JW_URL = "https://jw-hitsz-edu-cn.hitsz.edu.cn/Njpyfakc/queryList?sf_request_typ
 
 HEADERS = {
     "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-    "Cookie": "platformMultilingual_-_edu.cn=zh_CN; sdp_user_token=3f08ce29-36d8-4c79-9668-2c12062b8fda_71783d75-59f5-429b-9948-1895ce2c17f9; route=cb5f888c9cb0d85c260c8284847d46e6; JSESSIONID=8A0DCA6E800B586E275705A2CF069443",
+    "Cookie": "platformMultilingual_-_edu.cn=zh_CN; sdp_user_token=3f08ce29-36d8-4c79-9668-2c12062b8fda_9c83f1d7-35b3-42bf-bee3-ef619c6d0ae4; route=1db2c5f6085b9278d9cf7aaa8af65cd2; JSESSIONID=79A900F162D233C8652F2A5439213C0A",
     "RoleCode": "01",
     "X-Requested-With": "XMLHttpRequest",
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
