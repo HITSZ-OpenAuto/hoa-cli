@@ -3,7 +3,7 @@ name = "hoa-majors"
 version = "1.0.0"
 description = "从哈尔滨工业大学（深圳）教务系统抓取各年级、各专业的培养方案课程数据"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.14"
 license = { text = "MIT" }
 authors = [{ name = "HITSZ-OpenAuto" }]
 keywords = ["hitsz", "education", "courses", "curriculum"]
