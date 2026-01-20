@@ -1,6 +1,7 @@
 import argparse
 from pathlib import Path
 
+from hoa_majors.config import DEFAULT_DATA_DIR
 from hoa_majors.core.utils import iter_toml_files
 
 
@@ -42,7 +43,7 @@ def main():
     parser = argparse.ArgumentParser(description="获取培养方案中特定课程的详细信息")
     parser.add_argument("plan_id", help="培养方案 ID (fah)")
     parser.add_argument("course_code", help="课程代码")
-    parser.add_argument("--data-dir", type=Path, default=Path("data"), help="数据存储目录")
+    parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
     args = parser.parse_args()
 
     get_course_info(args.plan_id, args.course_code, args.data_dir)

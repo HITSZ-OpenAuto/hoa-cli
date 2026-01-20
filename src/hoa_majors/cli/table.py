@@ -1,7 +1,7 @@
 import argparse
 from pathlib import Path
 
-from hoa_majors.config import logger
+from hoa_majors.config import DEFAULT_DATA_DIR, logger
 from hoa_majors.core.utils import iter_toml_files
 
 HEADER_COMMENT = '''"""
@@ -88,7 +88,7 @@ def update_table(data_dir: Path, table_file: Path):
 def main():
     parser = argparse.ArgumentParser(description="生成或更新课程查找表")
     parser.add_argument("action", choices=["init", "update"], help="执行的操作")
-    parser.add_argument("--data-dir", type=Path, default=Path("data"), help="数据存储目录")
+    parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
     parser.add_argument("--output-file", type=Path, help="查找表输出文件路径")
     args = parser.parse_args()
 

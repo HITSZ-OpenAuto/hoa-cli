@@ -16,16 +16,24 @@
 │   │   ├── search.py     # 课程查询
 │   │   └── audit.py      # 冲突审计
 │   ├── core/             # 核心逻辑
+│   ├── data/             # 培养方案数据 (打包在包内)
+│   │   ├── SCHOOL_MAJORS/ # 专业课程 TOML 文件
+│   │   ├── lookup_table.py # 课程代码查找表
+│   │   └── major_mapping.json # 专业映射数据
 │   └── config.py         # 配置管理
-├── data/                 # 数据文件目录
-│   ├── SCHOOL_MAJORS/    # 专业课程 TOML 文件
-│   ├── lookup_table.py   # 课程代码查找表
-│   └── major_mapping.json # 专业映射数据
 ├── tests/                # 测试脚本
 ├── pyproject.toml        # 项目配置
 ├── .env.example          # 环境变量模板
 └── README.md             # 项目文档
 ```
+
+---
+
+## 数据说明
+
+本项目将抓取的培养方案数据打包在 `src/hoa_majors/data/` 目录下。当你通过 `pip` 或 `uv` 安装本项目后，CLI 工具会自动识别并使用这些内置数据。
+
+如果你需要使用自定义的数据目录，可以通过 `--data-dir` 参数指定。
 
 ---
 
@@ -58,7 +66,7 @@ uv sync
 uv run hoa-crawl
 ```
 
-该命令会先更新专业映射关系，然后抓取所有专业的课程数据并保存到 `data/SCHOOL_MAJORS/`。
+该命令会先更新专业映射关系，然后抓取所有专业的课程数据并保存到内置的数据目录。
 
 ### 3. 维护查找表
 
@@ -124,7 +132,7 @@ steps:
   - uses: HITSZ-OpenAuto/hoa-majors@main
 
   - name: List plans
-    run: hoa-plans --data-dir path/to/data
+    run: hoa-plans
 ```
 
 ---

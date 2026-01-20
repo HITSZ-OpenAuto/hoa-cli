@@ -2,7 +2,7 @@ import argparse
 from collections import defaultdict
 from pathlib import Path
 
-from hoa_majors.config import logger
+from hoa_majors.config import DEFAULT_DATA_DIR, logger
 from hoa_majors.core.utils import iter_toml_files, normalize_course_code
 
 
@@ -44,7 +44,7 @@ def report_conflicts(mapping: dict, output_file: Path):
 
 def main():
     parser = argparse.ArgumentParser(description="审计课程名称与代码的冲突")
-    parser.add_argument("--data-dir", type=Path, default=Path("data"), help="数据存储目录")
+    parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
     parser.add_argument("--output", type=Path, help="保存冲突报告的路径")
     args = parser.parse_args()
 

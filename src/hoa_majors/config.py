@@ -88,3 +88,11 @@ COURSE_URL = "https://jw.hitsz.edu.cn/Njpyfakc/queryList?sf_request_type=ajax"
 
 # 大类专业列表查询
 MAJOR_LIST_URL = "https://jw.hitsz.edu.cn/xjgl/dlfzysq/querydlzyd?sf_request_type=ajax"
+
+
+# -------------------------------------------------------------------------------------------------
+# 路径配置
+# -------------------------------------------------------------------------------------------------
+
+# 默认数据目录
+DEFAULT_DATA_DIR = Path(__file__).parent / "data"

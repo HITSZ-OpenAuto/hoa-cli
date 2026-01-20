@@ -1,6 +1,7 @@
 import argparse
 from pathlib import Path
 
+from hoa_majors.config import DEFAULT_DATA_DIR
 from hoa_majors.core.utils import iter_toml_files, normalize_course_code
 
 
@@ -19,7 +20,7 @@ def locate(code: str, data_dir: Path):
 def main():
     parser = argparse.ArgumentParser(description="在数据中搜索课程代码")
     parser.add_argument("code", nargs="?", help="要搜索的课程代码")
-    parser.add_argument("--data-dir", type=Path, default=Path("data"), help="数据存储目录")
+    parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
     args = parser.parse_args()
 
     code = args.code

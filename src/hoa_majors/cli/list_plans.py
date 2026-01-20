@@ -1,6 +1,7 @@
 import argparse
 from pathlib import Path
 
+from hoa_majors.config import DEFAULT_DATA_DIR
 from hoa_majors.core.utils import iter_toml_files
 
 
@@ -36,7 +37,7 @@ def list_plans(data_dir: Path):
 
 def main():
     parser = argparse.ArgumentParser(description="列出所有已抓取的培养方案")
-    parser.add_argument("--data-dir", type=Path, default=Path("data"), help="数据存储目录")
+    parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
     args = parser.parse_args()
 
     list_plans(args.data_dir)

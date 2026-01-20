@@ -4,7 +4,7 @@ from pathlib import Path
 
 import toml
 
-from hoa_majors.config import logger
+from hoa_majors.config import DEFAULT_DATA_DIR, logger
 from hoa_majors.core.fetcher import fetch_courses_by_fah, get_fah_list, get_major_list_by_dalei
 from hoa_majors.core.parser import normalize_course
 from hoa_majors.core.writer import write_toml
@@ -162,7 +162,7 @@ def main():
         default=["2019", "2020", "2021", "2022", "2023", "2024", "2025"],
         help="要抓取的年级列表",
     )
-    parser.add_argument("--data-dir", type=Path, default=Path("data"), help="数据存储目录")
+    parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
     args = parser.parse_args()
 
     mapping_file = args.data_dir / "major_mapping.json"

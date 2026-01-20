@@ -30,6 +30,9 @@ hoa-course-info = "hoa_majors.cli.get_course:main"
 [tool.setuptools.packages.find]
 where = ["src"]
 
+[tool.setuptools.package-data]
+"hoa_majors" = ["data/**/*.toml", "data/**/*.json", "data/**/*.py"]
+
 [project.optional-dependencies]
 dev = [
     "ruff>=0.1.0",
