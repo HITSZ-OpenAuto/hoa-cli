@@ -7,16 +7,15 @@ requires-python = ">=3.14"
 license = { text = "MIT" }
 authors = [{ name = "HITSZ-OpenAuto" }]
 keywords = ["hitsz", "education", "courses", "curriculum"]
-
-[build-system]
-requires = ["setuptools>=61.0"]
-build-backend = "setuptools.build_meta"
-
 dependencies = [
     "requests>=2.28.0",
     "toml>=0.10.0",
     "python-dotenv>=1.0.0",
 ]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
 
 [project.scripts]
 hoa = "hoa_majors.cli.main:main"
