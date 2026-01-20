@@ -1,0 +1,367 @@
+[MATH1001A]
+plan_id = "all"
+repo_id = "MATH1015A"
+
+[MATH1011A]
+plan_id = "3C23C88575EDAD44E0630B18F80AA0F2"
+repo_id = "MATH1015A"
+
+[MATH1001B]
+plan_id = "all"
+repo_id = "MATH1015B"
+
+[MATH1011B]
+plan_id = "3C23C88575EDAD44E0630B18F80AA0F2"
+repo_id = "MATH1015B"
+
+[GEIP1003]
+plan_id = "all"
+repo_id = "GEIP1018"
+
+[GEIP1007]
+plan_id = "all"
+repo_id = "GEIP1015"
+
+[GEIP1008]
+plan_id = "all"
+repo_id = "GEIP1016"
+
+[GEIP1009A]
+plan_id = "all"
+repo_id = "GEIP1018"
+
+[GEIP1009B]
+plan_id = "all"
+repo_id = "GEIP1018"
+
+[LANG1002]
+plan_id = "all"
+repo_id = "LANG100X"
+
+[LANG1006]
+plan_id = "all"
+repo_id = "LANG100X"
+
+[LANG1001]
+plan_id = "all"
+repo_id = "LANG100X"
+
+[LANG1007]
+plan_id = "all"
+repo_id = "LANG100X"
+
+[LANG1008]
+plan_id = "all"
+repo_id = "LANG100X"
+
+[PE1001A]
+plan_id = "all"
+repo_id = "PE100X"
+
+[PE1001B]
+plan_id = "all"
+repo_id = "PE100X"
+
+[PE1001C]
+plan_id = "all"
+repo_id = "PE100X"
+
+[PE1001D]
+plan_id = "all"
+repo_id = "PE100X"
+
+[PE1002C]
+plan_id = "all"
+repo_id = "PE100X"
+
+[PE1002D]
+plan_id = "all"
+repo_id = "PE100X"
+
+[PE1002E]
+plan_id = "all"
+repo_id = "PE100X"
+
+[PE1002F]
+plan_id = "all"
+repo_id = "PE100X"
+
+[CAEC1001]
+plan_id = "all"
+repo_id = "COMP2001"
+
+[COMP2021]
+plan_id = "all"
+repo_id = "COMP2001"
+
+[COMP1011]
+plan_id = "all"
+repo_id = "COMP2021"
+
+[COMP1013]
+plan_id = "all"
+repo_id = "COMP2021"
+
+[EE1005]
+plan_id = "all"
+repo_id = "EE1018"
+
+[EE1018]
+plan_id = "all"
+repo_id = "EE1018"
+
+[EE1019]
+plan_id = "all"
+repo_id = "EE1013"
+
+[EE1020]
+plan_id = "all"
+repo_id = "EE1011A"
+
+[EE1022]
+plan_id = "all"
+repo_id = "EE1014"
+
+[EE1023]
+plan_id = "all"
+repo_id = "EE1012A"
+
+[ELEC2016]
+plan_id = "all"
+repo_id = "EE1009"
+
+[PHYS1001A]
+plan_id = "all"
+repo_id = "PHYS1001"
+
+[PHYS1001B]
+plan_id = "all"
+repo_id = "PHYS1001"
+
+[PHYS1003]
+plan_id = "all"
+repo_id = "PHYS1001"
+
+[PHYS1005A]
+plan_id = "all"
+repo_id = "PHYS1001"
+
+[PHYS1005B]
+plan_id = "all"
+repo_id = "PHYS1001"
+
+[PHYS1007A]
+plan_id = "all"
+repo_id = "PHYS1001"
+
+[PHYS1007B]
+plan_id = "all"
+repo_id = "PHYS1001"
+
+[PHYS1002A]
+plan_id = "all"
+repo_id = "PHYS1002"
+
+[PHYS1002B]
+plan_id = "all"
+repo_id = "PHYS1002"
+
+[PHYS1004]
+plan_id = "all"
+repo_id = "PHYS1002"
+
+[PHYS1006A]
+plan_id = "all"
+repo_id = "PHYS1002"
+
+[PHYS1006B]
+plan_id = "all"
+repo_id = "PHYS1002"
+
+[ENGG1003]
+plan_id = "all"
+repo_id = "ENGG1003"
+
+[ENGG1006]
+plan_id = "all"
+repo_id = "ENGG1003"
+
+[ENGG1002]
+plan_id = "all"
+repo_id = "ENGG1002"
+
+[ENGG1008]
+plan_id = "all"
+repo_id = "ENGG1002"
+
+[IEPR1301A]
+plan_id = "all"
+repo_id = "AUTO2003A"
+
+[IEPR1301B]
+plan_id = "all"
+repo_id = "AUTO2003B"
+
+[COMP2003]
+plan_id = "all"
+repo_id = "COMP2030"
+
+[MATH1008]
+plan_id = "all"
+repo_id = "COMP2030"
+
+[MECH1003]
+plan_id = "all"
+repo_id = "MECH2019"
+
+[MECH1006]
+plan_id = "all"
+repo_id = "MECH2019"
+
+[MECH1007]
+plan_id = "all"
+repo_id = "MECH2019"
+
+[COMP2019]
+plan_id = "all"
+repo_id = "COMP2051"
+
+[COMP2053]
+plan_id = "all"
+repo_id = "COMP2051"
+
+[COMP2022]
+plan_id = "all"
+repo_id = "COMP2052"
+
+[COMP2007]
+plan_id = "all"
+repo_id = "COMP2052"
+
+[COMP2027]
+plan_id = "all"
+repo_id = "COMP3059"
+
+[COMP2024A]
+plan_id = "all"
+repo_id = "COMP3060"
+
+[COMP2028]
+plan_id = "all"
+repo_id = "COMP3060"
+
+[COMP2024B]
+plan_id = "all"
+repo_id = "COMP2029"
+
+[EE2005]
+plan_id = "all"
+repo_id = "AUTO3001A"
+
+[EE3006]
+plan_id = "all"
+repo_id = "EE304X"
+
+[EE3008]
+plan_id = "all"
+repo_id = "EE304X"
+
+[EE3009]
+plan_id = "all"
+repo_id = "EE304X"
+
+[EE3041]
+plan_id = "all"
+repo_id = "EE304X"
+
+[EE3042]
+plan_id = "all"
+repo_id = "EE304X"
+
+[EE3004]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3011]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3012]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3016]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3017]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3018]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3021]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3022]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3023]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3024]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3026]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3027]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3028]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3029]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3030]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3038]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3040]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE3043]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[EE4001]
+plan_id = "all"
+repo_id = "EE30XX"
+
+[AUTO2004]
+plan_id = "all"
+repo_id = "AUTO1001"
+
+[AUTO3014]
+plan_id = "all"
+repo_id = "AUTO3022"
+
+[MATH3010]
+plan_id = "all"
+repo_id = "AUTO3028"
