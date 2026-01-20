@@ -1,16 +1,16 @@
 import requests
-import time
-from typing import List, Dict, Optional
+
 from hoa_majors.config import (
     COURSE_URL,
     FAH_URL,
-    MAJOR_LIST_URL,
     HEADERS_FORM,
     HEADERS_JSON,
-    PROXIES
+    MAJOR_LIST_URL,
+    PROXIES,
 )
 
-def fetch_courses_by_fah(fah: str) -> List[Dict]:
+
+def fetch_courses_by_fah(fah: str) -> list[dict]:
     """
     Crawl the JW API for a specific FAH (培养方案号).
     Return a list of raw course dicts.
@@ -42,7 +42,8 @@ def fetch_courses_by_fah(fah: str) -> List[Dict]:
 
     return clean_list
 
-def get_fah_list(njdm: str) -> List[Dict]:
+
+def get_fah_list(njdm: str) -> list[dict]:
     """
     获取指定年级的培养方案列表
     """
@@ -79,15 +80,18 @@ def get_fah_list(njdm: str) -> List[Dict]:
     for item in raw_list:
         if item.get("falxdm") != "1":
             continue
-        result.append({
-            "fah": item.get("fah"),
-            "zydm": item.get("zydm"),
-            "zymc": item.get("zymc"),
-            "yxmc": item.get("yxmc"),
-        })
+        result.append(
+            {
+                "fah": item.get("fah"),
+                "zydm": item.get("zydm"),
+                "zymc": item.get("zymc"),
+                "yxmc": item.get("yxmc"),
+            }
+        )
     return result
 
-def get_major_list_by_dalei(yzydm: str, xn: str = "2024-2025", xq: str = "2") -> List[Dict]:
+
+def get_major_list_by_dalei(yzydm: str, xn: str = "2024-2025", xq: str = "2") -> list[dict]:
     """
     根据大类专业代码查询其下的分流专业列表
     """

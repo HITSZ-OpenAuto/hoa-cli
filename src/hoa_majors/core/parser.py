@@ -1,4 +1,4 @@
-from typing import Dict, List, Any
+from typing import Any
 
 # 字段英文映射
 FIELD_MAP = {
@@ -24,7 +24,8 @@ HOURS_MAP = {
     "fdxs": ("10", "tutoring"),
 }
 
-def parse_hours(raw_item: Dict[str, Any]) -> Dict[str, Any]:
+
+def parse_hours(raw_item: dict[str, Any]) -> dict[str, Any]:
     """
     Extract structured hours:
     - total_hours
@@ -37,7 +38,7 @@ def parse_hours(raw_item: Dict[str, Any]) -> Dict[str, Any]:
     if total_hours_key in raw_item:
         try:
             result["total_hours"] = int(raw_item[total_hours_key])
-        except:
+        except (ValueError, TypeError):
             result["total_hours"] = 0
 
     # 子学时
@@ -49,16 +50,16 @@ def parse_hours(raw_item: Dict[str, Any]) -> Dict[str, Any]:
         if key in raw_item:
             try:
                 result["hours"][eng_name] = int(raw_item[key])
-            except:
+            except (ValueError, TypeError):
                 result["hours"][eng_name] = 0
 
-        if isinstance(xss, Dict) and key in xss:
+        if isinstance(xss, dict) and key in xss:
             val = xss[key]
             if isinstance(val, str) and "周" in val:
                 val = val.replace("周", "")
             try:
                 result["hours"][eng_name] = int(val)
-            except:
+            except (ValueError, TypeError):
                 pass
 
         if eng_name not in result["hours"]:
@@ -66,7 +67,8 @@ def parse_hours(raw_item: Dict[str, Any]) -> Dict[str, Any]:
 
     return result
 
-def normalize_course(raw: Dict[str, Any]) -> Dict[str, Any]:
+
+def normalize_course(raw: dict[str, Any]) -> dict[str, Any]:
     """
     Convert raw JW item to normalized English-field dict.
     """

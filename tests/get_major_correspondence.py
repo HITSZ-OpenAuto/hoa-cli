@@ -52,5 +52,5 @@ for item in resp_json:
 #     "XSZYDM": "050101",
 #     "ZYMC": "材料科学与工程",
 # }
-for i, item in enumerate(filtered_list, 1):
+for _i, item in enumerate(filtered_list, 1):
     print(json.dumps(item, ensure_ascii=False, indent=2))

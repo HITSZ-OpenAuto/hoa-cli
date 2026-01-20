@@ -1,12 +1,15 @@
 from pathlib import Path
+from typing import Any
+
 import toml
-from typing import Dict, Any
+
 
 def ensure_dir(path: Path):
     """Create directory recursively."""
     path.mkdir(parents=True, exist_ok=True)
 
-def write_toml(path: Path, data: Dict[str, Any]):
+
+def write_toml(path: Path, data: dict[str, Any]):
     """Write TOML dict to file, ensuring info comes before courses."""
     ensure_dir(path.parent)
     with open(path, "w", encoding="utf-8") as f:

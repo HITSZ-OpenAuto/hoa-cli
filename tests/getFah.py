@@ -7,9 +7,7 @@ import requests
 # 将父目录添加到路径，以便导入 config 模块
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from config import FAH_URL as url
-from config import HEADERS_FORM as headers
-from config import PROXIES as PROXIES
+from config import FAH_URL, HEADERS_FORM, PROXIES
 
 data = {
     "sf_request_type": "ajax",
@@ -36,7 +34,7 @@ data = {
 }
 
 
-resp = requests.post(url, headers=headers, data=data, proxies=PROXIES)
+resp = requests.post(FAH_URL, headers=HEADERS_FORM, data=data, proxies=PROXIES)
 
 # 解析返回的 JSON
 resp_json = resp.json()

@@ -3,13 +3,13 @@
 
 数据结构:
     LOOKUP_TABLE_TEMPLATE: dict[tuple[str, str], str]
-    
+
     键 (Key): tuple[str, str]
         - 第一个元素: 课程代码 (course_code)，如 "COMP1003"
         - 第二个元素: 培养方案号 (plan_id/fah)，用于区分不同专业的同名课程
           - 空字符串 "" 表示该课程在所有培养方案中通用
           - 非空字符串表示特定专业的培养方案号
-    
+
     值 (Value): str
         - 对应的 OpenAuto 仓库 ID (repo_id)
         - 通常与课程代码相同，但部分课程可能有自定义映射
