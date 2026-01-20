@@ -31,10 +31,11 @@
 
 ## 安装说明
 
-推荐使用可编辑模式安装：
+推荐使用 `uv` 进行安装和管理：
 
 ```sh
-pip install -e .
+# 安装依赖并创建虚拟环境
+uv sync
 ```
 
 ---
@@ -54,7 +55,7 @@ pip install -e .
 使用统一的抓取命令：
 
 ```sh
-hoa-crawl
+uv run hoa-crawl
 ```
 
 该命令会先更新专业映射关系，然后抓取所有专业的课程数据并保存到 `data/SCHOOL_MAJORS/`。
@@ -63,26 +64,50 @@ hoa-crawl
 
 初始化查找表：
 ```sh
-hoa-table init
+uv run hoa-table init
 ```
 
 增量更新查找表（添加新出现的课程）：
 ```sh
-hoa-table update
+uv run hoa-table update
 ```
 
 ### 4. 课程查询
 
 快速查找课程所在文件：
 ```sh
-hoa-search [课程代码]
+uv run hoa-search [课程代码]
 ```
 
 ### 5. 冲突审计
 
 检测同名课程但代码不同的冲突：
 ```sh
-hoa-audit
+uv run hoa-audit
+```
+
+---
+
+## 开发与测试
+
+### 运行测试脚本
+
+可以使用 `uv run` 直接运行 `tests/` 目录下的脚本：
+
+```sh
+uv run python tests/get_course_single.py
+```
+
+### 代码格式化与检查
+
+推荐使用 `ruff` 进行代码检查和格式化（已在 `pyproject.toml` 中配置）：
+
+```sh
+# 运行 linter
+uv run ruff check .
+
+# 运行 formatter
+uv run ruff format .
 ```
 
 ---
