@@ -17,7 +17,7 @@
 │   │   └── audit.py      # 冲突审计
 │   ├── core/             # 核心逻辑
 │   ├── data/             # 培养方案数据 (打包在包内)
-│   │   ├── SCHOOL_MAJORS/ # 专业课程 TOML 文件
+│   │   ├── plans/ # 专业课程 TOML 文件
 │   │   ├── lookup_table.py # 课程代码查找表
 │   │   └── major_mapping.json # 专业映射数据
 │   └── config.py         # 配置管理

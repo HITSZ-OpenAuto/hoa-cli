@@ -96,3 +96,6 @@ MAJOR_LIST_URL = "https://jw.hitsz.edu.cn/xjgl/dlfzysq/querydlzyd?sf_request_typ
 
 # 默认数据目录
 DEFAULT_DATA_DIR = Path(__file__).parent / "data"
+
+# 子目录：专业培养方案 TOML 集合
+PLANS_SUBDIR = "plans"

@@ -4,7 +4,7 @@ from pathlib import Path
 
 import toml
 
-from hoa_majors.config import DEFAULT_DATA_DIR, logger
+from hoa_majors.config import DEFAULT_DATA_DIR, PLANS_SUBDIR, logger
 from hoa_majors.core.fetcher import fetch_courses_by_fah, get_fah_list, get_major_list_by_dalei
 from hoa_majors.core.parser import normalize_course
 from hoa_majors.core.writer import write_toml
@@ -125,7 +125,7 @@ def crawl_courses(mapping_path: Path, data_dir: Path):
     with open(mapping_path, encoding="utf-8") as f:
         all_majors = json.load(f)
 
-    base_dir = data_dir / "SCHOOL_MAJORS"
+    base_dir = data_dir / PLANS_SUBDIR
 
     for year, majors_dict in all_majors.items():
         for major_code, major_info in majors_dict.items():

@@ -1,3 +1,4 @@
+from hoa_majors.config import PLANS_SUBDIR
 import tomllib
 from collections.abc import Generator
 from pathlib import Path
@@ -16,7 +17,7 @@ def normalize_course_code(code: str) -> str:
 
 def iter_toml_files(data_dir: Path) -> Generator[tuple[Path, dict[str, Any]], None, None]:
     """遍历所有的 TOML 数据文件"""
-    root = data_dir / "SCHOOL_MAJORS"
+    root = data_dir / PLANS_SUBDIR
     if not root.exists():
         return
 

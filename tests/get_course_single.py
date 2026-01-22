@@ -1,13 +1,13 @@
 from pathlib import Path
 
-from hoa_majors.config import DEFAULT_DATA_DIR
+from hoa_majors.config import DEFAULT_DATA_DIR, PLANS_SUBDIR
 from hoa_majors.core.fetcher import fetch_courses_by_fah
 from hoa_majors.core.parser import normalize_course
 from hoa_majors.core.writer import write_toml
 
 
 def main():
-    root = DEFAULT_DATA_DIR / "SCHOOL_MAJORS"
+    root = DEFAULT_DATA_DIR / PLANS_SUBDIR
     fah = "42C248B0D4A01B24E0630B18F80A7AD4"
 
     print(f"Fetching courses for FAH: {fah}")
