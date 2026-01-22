@@ -23,11 +23,6 @@ hoa = "hoa_majors.cli.main:main"
 [tool.uv]
 managed = true
 
-[project.optional-dependencies]
-dev = [
-    "ruff>=0.1.0",
-]
-
 [tool.ruff]
 line-length = 100
 target-version = "py311"
@@ -39,3 +34,9 @@ ignore = ["E501"]
 [tool.ruff.format]
 quote-style = "double"
 indent-style = "space"
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.5.1",
+    "ruff>=0.14.13",
+]
