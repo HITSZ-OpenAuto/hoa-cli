@@ -25,7 +25,7 @@ clean: ## Remove build artifacts and cache files
 	@echo "✓ Cleaned build artifacts and cache files!"
 
 lint: ## Run ruff linter
-	uv run ruff check .
+	uv run ruff check . --fix
 
 format: ## Run ruff formatter
 	uv run ruff format .

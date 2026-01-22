@@ -1,5 +1,3 @@
-from pathlib import Path
-
 from hoa_majors.config import DEFAULT_DATA_DIR, PLANS_SUBDIR
 from hoa_majors.core.fetcher import fetch_courses_by_fah
 from hoa_majors.core.parser import normalize_course

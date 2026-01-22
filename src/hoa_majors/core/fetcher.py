@@ -7,9 +7,9 @@ from hoa_majors.config import (
     FAH_URL,
     HEADERS_FORM,
     HEADERS_JSON,
+    JW_COOKIE,
     MAJOR_LIST_URL,
     PROXIES,
-    JW_COOKIE,
     logger,
 )
 
