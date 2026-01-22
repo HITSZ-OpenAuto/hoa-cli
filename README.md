@@ -1,5 +1,9 @@
 # hoa-majors
 
+[![Build and Verify](https://github.com/HITSZ-OpenAuto/hoa-majors/actions/workflows/build.yml/badge.svg)](https://github.com/HITSZ-OpenAuto/hoa-majors/actions/workflows/build.yml)
+[![Python Version](https://img.shields.io/badge/python-3.14+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 本项目用于从 **哈尔滨工业大学（深圳）教务系统** 抓取各年级、各专业的培养方案课程数据，并将其规范化后保存为 TOML 格式文件，便于后续查询与分析。
 
 ## 快速开始
