@@ -1,7 +1,7 @@
 import argparse
 import sys
 from pathlib import Path
-from hoa_majors.cli import crawl, table, search, audit, list_plans, list_courses, get_course
+from hoa_majors.cli import crawl, table, search, audit, plans, courses, info
 from hoa_majors.config import DEFAULT_DATA_DIR, logger
 
 def main():
@@ -93,11 +93,11 @@ def main():
         report_file = args.output or args.data_dir / "course_code_conflicts.txt"
         audit.report_conflicts(mapping, report_file)
     elif args.command == "plans":
-        list_plans.list_plans(args.data_dir)
+        plans.list_plans(args.data_dir)
     elif args.command == "courses":
-        list_courses.list_courses(args.plan_id, args.data_dir)
+        courses.list_courses(args.plan_id, args.data_dir)
     elif args.command == "info":
-        get_course.get_course_info(args.plan_id, args.course_code, args.data_dir)
+        info.get_course_info(args.plan_id, args.course_code, args.data_dir)
     else:
         parser.print_help()
 
