@@ -9,6 +9,7 @@ from hoa_majors.config import (
     HEADERS_JSON,
     MAJOR_LIST_URL,
     PROXIES,
+    JW_COOKIE,
     logger,
 )
 
@@ -32,6 +33,18 @@ def create_session() -> requests.Session:
 
 # 全局 session 实例
 _session = create_session()
+_warned_missing_cookie = False
+
+
+def _ensure_cookie_warning():
+    """Log a warning once if JW_COOKIE is missing when making JW requests."""
+    global _warned_missing_cookie
+    if _warned_missing_cookie:
+        return
+    if not JW_COOKIE:
+        logger.warning("JW_COOKIE 未配置，请在 .env 文件或环境变量中设置")
+        logger.info("提示: 可以复制 .env.example 为 .env 并填入你的 Cookie")
+        _warned_missing_cookie = True
 
 
 def fetch_courses_by_fah(fah: str) -> list[dict]:
@@ -39,6 +52,7 @@ def fetch_courses_by_fah(fah: str) -> list[dict]:
     Crawl the JW API for a specific FAH (培养方案号).
     Return a list of raw course dicts.
     """
+    _ensure_cookie_warning()
     payload = {
         "bglx": "",
         "multiple": "false",
@@ -73,6 +87,7 @@ def get_fah_list(njdm: str) -> list[dict]:
     """
     获取指定年级的培养方案列表
     """
+    _ensure_cookie_warning()
     data = {
         "sf_request_type": "ajax",
         "key": "",
@@ -125,6 +140,7 @@ def get_major_list_by_dalei(yzydm: str, xn: str = "2024-2025", xq: str = "2") ->
     """
     根据大类专业代码查询其下的分流专业列表
     """
+    _ensure_cookie_warning()
     data = {
         "kglx": "0",
         "xn": xn,
