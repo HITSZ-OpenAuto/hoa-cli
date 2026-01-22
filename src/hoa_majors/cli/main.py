@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 from hoa_majors import __version__
-from hoa_majors.cli import audit, courses, crawl, info, plans, search
+from hoa_majors.cli import audit, courses, crawl, info, plans, repo, search
 from hoa_majors.config import DEFAULT_DATA_DIR, logger
 
 
@@ -61,6 +61,12 @@ def main():
     info_parser.add_argument("course_code", help="课程代码")
     info_parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
 
+    # repo
+    repo_parser = subparsers.add_parser("repo", help="获取课程对应的 OpenAuto 仓库 ID")
+    repo_parser.add_argument("plan_id", help="培养方案 ID (fah)")
+    repo_parser.add_argument("course_code", help="课程代码")
+    repo_parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
+
     if len(sys.argv) == 1:
         parser.print_help()
         sys.exit(0)
@@ -100,6 +106,8 @@ def main():
         courses.list_courses(args.plan_id, args.data_dir)
     elif args.command == "info":
         info.get_course_info(args.plan_id, args.course_code, args.data_dir)
+    elif args.command == "repo":
+        repo.run(args)
     else:
         parser.print_help()
 
