@@ -1,0 +1,997 @@
+{
+  "grades": {
+    "AUTO1001": {
+      "course_name": "自动化认知与实践",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 课堂实验 30%+ 机器人考核 30% + 期末考试 30%"
+        }
+      }
+    },
+    "AUTO2001": {
+      "course_name": "自动化专业导论",
+      "default": {
+        "default": {
+          "grade": "作业 40% + 期末考试 60%"
+        }
+      }
+    },
+    "AUTO2003B": {
+      "course_name": "创新训练课 B",
+      "default": {
+        "default": {
+          "grade": "大作业 100%"
+        }
+      }
+    },
+    "AUTO2005": {
+      "course_name": "信号分析与处理",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 实验 25% + 期末考试 65%"
+        }
+      }
+    },
+    "AUTO2006": {
+      "course_name": "控制理论中的代数基础",
+      "default": {
+        "default": {
+          "grade": "平时成绩 10% + 作业 20% + 期末考试 70%"
+        }
+      }
+    },
+    "AUTO3001A": {
+      "course_name": "自动控制理论 A",
+      "default": {
+        "default": {
+          "grade": "作业 13% + 课堂表现 5% + 上机实验 4% + 硬件实验 8% + 期末考试 70%"
+        }
+      }
+    },
+    "AUTO3001B": {
+      "course_name": "自动控制理论B",
+      "default": {
+        "default": {
+          "grade": "作业 12% + 出勤 5% + 上机实验 5% + 实验 8% + 期末考试 70% "
+        }
+      }
+    },
+    "AUTO3002A": {
+      "course_name": "自动控制实践 A",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 实验 25% + 期末考试 65%"
+        }
+      }
+    },
+    "AUTO3002B": {
+      "2021": {
+        "default": {
+          "grade": "作业 10% + 实验 40% + 期末考试 50%"
+        }
+      },
+      "2023": {
+        "default": {
+          "grade": "作业 10% + 实验 30% + 期末考试 60%"
+        }
+      },
+      "course_name": "自动控制实践 B",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 实验 40% + 期末考试 50%"
+        }
+      }
+    },
+    "AUTO3003": {
+      "course_name": "数字图像处理",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 课程设计 25%+ 实验 20% + 期末考试 45%"
+        }
+      }
+    },
+    "AUTO3004": {
+      "course_name": "系统建模与仿真",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 实验 20% + 期末考试 60%"
+        }
+      }
+    },
+    "AUTO3005": {
+      "course_name": "机器人学导论",
+      "default": {
+        "default": {
+          "grade": "作业 15% + 实验 15% + 课程设计 20% + 期末考试 50%"
+        }
+      }
+    },
+    "AUTO3006": {
+      "course_name": "机器视觉",
+      "default": {
+        "default": {
+          "grade": "考勤 5% + 作业 10% + 实验 20% + 课设 25% + 期末考试 40%"
+        }
+      }
+    },
+    "AUTO3007": {
+      "2020": {
+        "default": {
+          "grade": "作业 20% + 实验 40% + 期末考试 40%"
+        }
+      },
+      "2021": {
+        "default": {
+          "grade": "作业 20% + 实验 30% + 期末考试 50%"
+        }
+      },
+      "2022": {
+        "default": {
+          "grade": "作业 20% + 实验 30% + 期末考试 50%"
+        }
+      },
+      "course_name": "过程控制系统",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 实验 30% + 期末考试 50%"
+        }
+      }
+    },
+    "AUTO3011": {
+      "course_name": "运动控制系统",
+      "default": {
+        "default": {
+          "grade": "作业+实验 50% + 期末考试 50%"
+        }
+      }
+    },
+    "AUTO3012": {
+      "course_name": "移动机器人导论",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 实验 40% + 实验报告 40%"
+        }
+      }
+    },
+    "AUTO3016": {
+      "course_name": "自动控制实践 A 实验",
+      "default": {
+        "default": {
+          "grade": "实验报告 90% (10% × 9) + 答辩 10%"
+        }
+      }
+    },
+    "AUTO3019": {
+      "course_name": "机器学习概论",
+      "default": {
+        "default": {
+          "grade": "平时 10% + 作业 30% + 报告 20% + 期末大作业 40%"
+        }
+      }
+    },
+    "AUTO3022": {
+      "course_name": "自动化领域专家系列讲座",
+      "default": {
+        "default": {
+          "grade": "报告 100%"
+        }
+      }
+    },
+    "AUTO3024": {
+      "course_name": "嵌入式系统",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 实验 50% + 期末考试 40%"
+        }
+      }
+    },
+    "AUTO3028": {
+      "2021": {
+        "default": {
+          "grade": "作业 30% + 期末考试 70%"
+        }
+      },
+      "2023": {
+        "default": {
+          "grade": "作业 40% + 期末考试 60%"
+        }
+      },
+      "course_name": "数学规划与数值优化"
+    },
+    "AUTO3099": {
+      "21级": {
+        "default": {
+          "grade": "开题检查 2% + 中期检查 3% + 结题检查 5% + 指导老师评分 27% + 评阅老师评分 18% + 答辩小组评分 45%"
+        }
+      },
+      "course_name": "毕业设计"
+    },
+    "AUTO5001": {
+      "course_name": "线性系统理论",
+      "default": {
+        "default": {
+          "grade": "作业 40% + 期末考试 60%"
+        }
+      }
+    },
+    "AUTO5002": {
+      "course_name": "系统辨识",
+      "default": {
+        "default": {
+          "grade": "作业 40% + 期末考试 60%"
+        }
+      }
+    },
+    "AUTO5005": {
+      "course_name": "非线性与自适应控制",
+      "default": {
+        "default": {
+          "grade": "平时成绩 30% + 期末考试 70%"
+        }
+      }
+    },
+    "AUTO5013": {
+      "course_name": "最优估计",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 出勤 10% + 项目 40% + 期末考试 40%"
+        }
+      }
+    },
+    "AUTO5023": {
+      "2024": {
+        "default": {
+          "grade": "作业（含凸优化习题以及最优控制大作业） 30% + 期末考试 70%"
+        }
+      },
+      "course_name": "凸优化与最优控制",
+      "default": {
+        "default": {
+          "grade": "随堂测验 10% + 作业 20% + 期末考试 70%"
+        }
+      }
+    },
+    "AUTO5024": {
+      "course_name": "模式识别",
+      "default": {
+        "default": {
+          "grade": "上机实验 40% + 期末考试 60%"
+        }
+      }
+    },
+    "CHEM1012": {
+      "course_name": "大学化学III",
+      "default": {
+        "default": {
+          "grade": "平时 60% + 实验 40%"
+        }
+      }
+    },
+    "COMP1011": {
+      "course_name": "程序设计与思维实践",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 实验 30% + 期末考试 60%"
+        }
+      }
+    },
+    "COMP2001": {
+      "course_name": "计算机专业导论",
+      "default": {
+        "default": {
+          "grade": "作业 30% + 期末考试 70%"
+        }
+      }
+    },
+    "COMP2008": {
+      "course_name": "计算机组成原理",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 实验 20% + 期末考试 70%"
+        }
+      }
+    },
+    "COMP2010": {
+      "course_name": "近世代数",
+      "default": {
+        "default": {
+          "grade": "作业 40% + 期末考试 60%"
+        }
+      }
+    },
+    "COMP2012": {
+      "course_name": "计算机设计与实践",
+      "default": {
+        "default": {
+          "grade": "实验 100%"
+        }
+      }
+    },
+    "COMP2014": {
+      "course_name": "C++语言程序设计",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 实验 40% + 期末考试 40%"
+        }
+      }
+    },
+    "COMP2029": {
+      "course_name": "面向领域的计算机系统设计与开发实践",
+      "default": {
+        "default": {
+          "grade": "过程检查 30% + 结题验收 70%"
+        }
+      }
+    },
+    "COMP2030": {
+      "course_name": "离散数学",
+      "default": {
+        "default": {
+          "grade": "作业 40% + 期末考试 60%"
+        }
+      }
+    },
+    "COMP2050": {
+      "2021": {
+        "default": {
+          "grade": "作业 10% + 实验 20% + 作业 70%"
+        }
+      },
+      "course_name": "数据结构与算法"
+    },
+    "COMP2051": {
+      "course_name": "数字逻辑设计",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 实验 30% + 期末考试 50%"
+        }
+      }
+    },
+    "COMP2052": {
+      "course_name": "数据结构与算法",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 实验 20% + 期末考试 70%"
+        }
+      }
+    },
+    "COMP3001": {
+      "course_name": "操作系统",
+      "default": {
+        "default": {
+          "grade": "平时分 10% + 实验 30% + 期末考试 60%"
+        }
+      }
+    },
+    "COMP3002": {
+      "course_name": "软件工程",
+      "default": {
+        "default": {
+          "grade": "作业 30% + 期末考试 70%"
+        }
+      }
+    },
+    "COMP3004": {
+      "course_name": "形式语言与自动机",
+      "default": {
+        "default": {
+          "grade": "作业 30% + 期末考试 70%"
+        }
+      }
+    },
+    "COMP3005": {
+      "course_name": "人工智能",
+      "default": {
+        "default": {
+          "grade": "作业 30% + 实验 30% + 期末考试 40%"
+        }
+      }
+    },
+    "COMP3006": {
+      "course_name": "机器学习",
+      "default": {
+        "default": {
+          "grade": "作业 10% + Project 50% + 期末考试 40%"
+        }
+      }
+    },
+    "COMP3007": {
+      "course_name": "模式识别",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 期末考试 90%"
+        }
+      }
+    },
+    "COMP3009": {
+      "course_name": "大数据导论",
+      "default": {
+        "default": {
+          "grade": "大作业 40% + 小作业 30% + 实验 30%"
+        }
+      }
+    },
+    "COMP3010": {
+      "course_name": "数据库系统",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 实验 30% + 期末考试 60%"
+        }
+      }
+    },
+    "COMP3011": {
+      "course_name": "计算机体系结构",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 实验 40% + 期末考试 40%"
+        }
+      }
+    },
+    "COMP3013": {
+      "course_name": "编译原理",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 实验 20% + 期末考试 70%"
+        }
+      }
+    },
+    "COMP3017": {
+      "course_name": "服务计算",
+      "default": {
+        "default": {
+          "grade": "Participation 5% + Hot topic study journal 15% + Exercises 20% + Final Examination 60%"
+        }
+      }
+    },
+    "COMP3018": {
+      "course_name": "图像处理",
+      "default": {
+        "default": {
+          "grade": "作业 30% + 期末考试 70%"
+        }
+      }
+    },
+    "COMP3019": {
+      "course_name": "生物信息学",
+      "default": {
+        "default": {
+          "grade": "作业 40% + 期末考试 60%"
+        }
+      }
+    },
+    "COMP3021": {
+      "course_name": "自然语言处理",
+      "default": {
+        "default": {
+          "grade": "比赛 60% + 期末考试 40%"
+        }
+      }
+    },
+    "COMP3028": {
+      "course_name": "软件体系结构",
+      "default": {
+        "default": {
+          "grade": "Participation 10% + Practical exercises 30% + Final examination 60%"
+        }
+      }
+    },
+    "COMP3029": {
+      "course_name": "计算机视觉",
+      "default": {
+        "default": {
+          "grade": "考勤 24% + 作业 40% + Final Project 36%"
+        }
+      }
+    },
+    "COMP3030": {
+      "course_name": "信息检索",
+      "default": {
+        "default": {
+          "grade": "随堂练习 10% + 作业 40% + 大项目 50%"
+        }
+      }
+    },
+    "COMP3039": {
+      "course_name": "嵌入式计算",
+      "default": {
+        "default": {
+          "grade": "作业 40% + 期末考试 60%"
+        }
+      }
+    },
+    "COMP3040": {
+      "course_name": "密码学基础",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 实验 30% + 期末考试 50%"
+        }
+      }
+    },
+    "COMP3043": {
+      "course_name": "深度学习体系结构",
+      "default": {
+        "default": {
+          "grade": "实验 40% + 课堂小测 40% + 期末报告 20%"
+        }
+      }
+    },
+    "COMP3044": {
+      "course_name": "科研写作交流技巧",
+      "default": {
+        "default": {
+          "grade": "课堂参与 20% + 课堂展示 40% + 论文 40%"
+        }
+      }
+    },
+    "COMP3052": {
+      "course_name": "计算机系统",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 实验 20% + 期末考试 60%"
+        }
+      }
+    },
+    "COMP3053": {
+      "course_name": "汇编语言与接口技术",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 实验 20% + 期末考试 60%"
+        }
+      }
+    },
+    "COMP3054": {
+      "course_name": "网络与系统安全",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 实验 30% + 期末考试 60%"
+        }
+      }
+    },
+    "COMP3059": {
+      "course_name": "软件构造",
+      "default": {
+        "default": {
+          "grade": "作业 10% + 上机实验 40% + 期末考试 50%"
+        }
+      }
+    },
+    "COMP3060": {
+      "course_name": "软件构造实践",
+      "default": {
+        "default": {
+          "grade": "开题报告 10% + 中期检查 20% + 结题报告 20% + 软件作品 50%"
+        }
+      }
+    },
+    "ECON2005F": {
+      "course_name": "经济学原理（跨专业选修）",
+      "default": {
+        "default": {
+          "grade": "考勤 20% + 生活中的经济学 20% + 期中考试 30% + 期末考试 30%"
+        }
+      }
+    },
+    "EE1007": {
+      "21级电气/通信、22级自动化": {
+        "default": {
+          "grade": "作业 20% + 期末考试 80%"
+        }
+      },
+      "21级自动化": {
+        "default": {
+          "grade": "作业 30% + 期末考试 70%"
+        }
+      },
+      "course_name": "模拟电子技术基础"
+    },
+    "EE1008": {
+      "course_name": "模拟电子技术实验",
+      "default": {
+        "default": {
+          "grade": "MOOC预习题 + 按时完成实验（不按时完成，则适当扣分）+ 报告分数（无考试）"
+        }
+      }
+    },
+    "EE1009": {
+      "course_name": "数字电子技术基础",
+      "default": {
+        "default": {
+          "grade": "平时成绩 20% + 期末考试 80% (上课会有小测，以考勤为主，到场即有60分)"
+        }
+      }
+    },
+    "EE1010": {
+      "course_name": "数字电子技术实验",
+      "default": {
+        "default": {
+          "grade": "预习题 + 按时完成实验（不按时完成，则适当扣分）+ 报告分数"
+        }
+      }
+    },
+    "EE1011A": {
+      "WangCan": {
+        "default": {
+          "grade": "作业 35% + 期末考试 65%"
+        }
+      },
+      "WangYi": {
+        "default": {
+          "grade": "作业 20% + 期末考试 80%"
+        }
+      },
+      "course_name": "电路IA"
+    },
+    "EE1011B": {
+      "course_name": "电路IB",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 期末考试 80%"
+        }
+      }
+    },
+    "EE1012A": {
+      "course_name": "电路实验IA",
+      "default": {
+        "default": {
+          "grade": "实验报告 100%"
+        }
+      }
+    },
+    "EE1012B": {
+      "course_name": "电路实验IB",
+      "default": {
+        "default": {
+          "grade": "出勤 + 实验报告 100%"
+        }
+      }
+    },
+    "EE1013": {
+      "course_name": "电路与电子学",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 期末考试 80%"
+        }
+      }
+    },
+    "EE1014": {
+      "course_name": "电路与电子技术实验",
+      "default": {
+        "default": {
+          "grade": "实验报告 100%"
+        }
+      }
+    },
+    "EE1018": {
+      "course_name": "电路与电子学I",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 期末考试 80%"
+        }
+      }
+    },
+    "EE2003": {
+      "course_name": "电磁场",
+      "default": {
+        "default": {
+          "grade": "作业 14% + MOOC 12% + 实验 8% + 期末考试 66%"
+        }
+      }
+    },
+    "EE2004": {
+      "2024": {
+        "default": {
+          "grade": "作业 20% + 期末考试 80%"
+        }
+      },
+      "course_name": "高等电路与电子分析"
+    },
+    "EE3002": {
+      "course_name": "电力电子技术",
+      "default": {
+        "default": {
+          "grade": "实验 20% + 期中考试 20% + 期末考试 60%"
+        }
+      }
+    },
+    "EE3015": {
+      "course_name": "电力系统分析"
+    },
+    "EE304X": {
+      "course_name": "专业综合实践",
+      "default": {
+        "default": {
+          "grade": "实物验收 30% + 设计报告 70%"
+        }
+      }
+    },
+    "EMEC1002": {
+      "2024": {
+        "default": {
+          "grade": "平时考勤 10% + 作业&小测 20% + 期中考试 20% + 期末考试 50%"
+        }
+      },
+      "course_name": "理论力学II"
+    },
+    "ENGG1002": {
+      "course_name": "工程训练（金工实习）",
+      "default": {
+        "default": {
+          "grade": "工程认知（课堂作业） 15% + 工程素养（出勤） 15% + 工程技能（训练内容） 30% + 工程综合（项目制作） 30% + 工程创新（项目创新） 10%"
+        }
+      }
+    },
+    "ENGG1003": {
+      "23级": {
+        "default": {
+          "grade": "元器件识别 7% + 电子封装 7% + 电子可靠性 5% + 硬件设计 11% + PCB设计 11% + 软件设计 18% + 焊接调试 11% + 项目制作 30%"
+        }
+      },
+      "course_name": "工程训练（电子工艺实习）",
+      "default": {
+        "default": {
+          "grade": "实验 100% (具体细分参考年份配置)"
+        }
+      }
+    },
+    "GEIP1011": {
+      "2022": {
+        "default": {
+          "grade": "课堂表现 10% + 讨论与展示 20% + 作业 20% + 期末考试 50%"
+        }
+      },
+      "2023": {
+        "default": {
+          "grade": "课堂表现 4% + 小测 16% + 讨论与展示 10% + 期末考试 70%"
+        }
+      },
+      "course_name": "马克思主义基本原理"
+    },
+    "GEIP1015": {
+      "course_name": "思想道德与法治",
+      "default": {
+        "default": {
+          "grade": "平时 50% + 期末考试 50%"
+        }
+      }
+    },
+    "GEIP1016": {
+      "course_name": "中国近现代史纲要",
+      "default": {
+        "default": {
+          "grade": "课堂表现 10% + 讨论与展示 20% + 论文 20% + 期末考试 50%"
+        }
+      }
+    },
+    "GEIP1017": {
+      "2023": {
+        "default": {
+          "grade": "平时和课堂展示 20% + 期中论文 30% + 期末论文 50%"
+        }
+      },
+      "2024": {
+        "default": {
+          "grade": "平时和课堂展示 20% + 期中论文 20% + 期末考试 60%"
+        }
+      },
+      "2025": {
+        "default": {
+          "grade": "平时和课堂展示 24% + 期中论文 16% + 期末考试 60%"
+        }
+      },
+      "course_name": "习近平新时代中国特色社会主义思想概论",
+      "default": {
+        "default": {
+          "grade": "请参考具体年份设置（23级为考查课，24级及以后为考试课）"
+        }
+      }
+    },
+    "GEIP1018": {
+      "2024": {
+        "default": {
+          "grade": "课程论文 10% + 小组汇报 20% + 期末考试 70%"
+        }
+      },
+      "course_name": "毛泽东思想和中国特色社会主义理论体系概论"
+    },
+    "GEIP4004": {
+      "course_name": "新时代中国特色社会主义理论与实践",
+      "default": {
+        "default": {
+          "grade": "出勤 10% + 论文 20% + 讨论与展示 20% + 期末考试 50%"
+        }
+      }
+    },
+    "LANG100X": {
+      "course_name": "大学英语",
+      "default": {
+        "default": {
+          "grade": "作业 40% + 期末考试 60%"
+        }
+      },
+      "大一": {
+        "default": {
+          "grade": "作业 40% + 期末考试 60%"
+        }
+      },
+      "大二": {
+        "default": {
+          "grade": "作业 50% + 期末考试 50%"
+        }
+      }
+    },
+    "MATH1002": {
+      "course_name": "代数与几何",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 期中考试 30% + 期末考试 50%"
+        }
+      }
+    },
+    "MATH1004": {
+      "course_name": "概率论与数理统计",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 论文 10% + 期末考试 70%"
+        }
+      }
+    },
+    "MATH1005": {
+      "course_name": "复变函数与积分变换",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 期末考试 80%"
+        }
+      }
+    },
+    "MATH1015A": {
+      "course_name": "微积分A",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 期中考试 30% + 期末考试 50%"
+        }
+      }
+    },
+    "MATH1015B": {
+      "course_name": "微积分B",
+      "default": {
+        "default": {
+          "grade": "作业 20% + 期中考试 30% + 期末考试 50%"
+        }
+      }
+    },
+    "MATH4001": {
+      "course_name": "矩阵分析",
+      "default": {
+        "default": {
+          "grade": "作业 30% + 期末考试 70%"
+        }
+      }
+    },
+    "MATH4002": {
+      "course_name": "优化算法",
+      "default": {
+        "default": {
+          "grade": "作业 30% + 期末考试 70%"
+        }
+      }
+    },
+    "MATH4004": {
+      "course_name": "数值分析",
+      "default": {
+        "default": {
+          "grade": "出勤 10% + 课堂测验及作业 20% + 期末考试 70%"
+        }
+      }
+    },
+    "MECH2010": {
+      "course_name": "机械设计基础",
+      "default": {
+        "default": {
+          "grade": "平时成绩 30% + 作业 20% + 期末考试 50%"
+        }
+      }
+    },
+    "MECH2019": {
+      "course_name": "设计与制造 A",
+      "default": {
+        "default": {
+          "grade": "平时作业 20% + 大作业 30% + 期末考试 50%"
+        }
+      }
+    },
+    "MECH2020": {
+      "course_name": "设计与制造B",
+      "default": {
+        "default": {
+          "grade": "小作业 10% + 大作业 20% + 期末考试 70%"
+        }
+      }
+    },
+    "MECH2022": {
+      "course_name": "固体力学",
+      "default": {
+        "default": {
+          "grade": "作业 15% + 实验 15% + 期末考试 70%"
+        }
+      }
+    },
+    "MECH3005": {
+      "course_name": "机电系统控制基础",
+      "default": {
+        "default": {
+          "grade": "平时作业 20% + 实验 20% + 期末考试 60%"
+        }
+      }
+    },
+    "MECH3041": {
+      "course_name": "设计与制造 C",
+      "default": {
+        "default": {
+          "grade": "大作业 20% + 实验 30% + 期末考试 50%"
+        }
+      }
+    },
+    "MECH3060": {
+      "course_name": "机器人学基础",
+      "default": {
+        "default": {
+          "grade": "作业 25% + 实验 15% + 期末考试 60%"
+        }
+      }
+    },
+    "PHYS1001": {
+      "2023": {
+        "default": {
+          "grade": "作业 30% + 期末考试 70%"
+        }
+      },
+      "2024": {
+        "default": {
+          "grade": {
+            "作业": "30%",
+            "期中考试": "20%",
+            "期末考试": "50%"
+          }
+        }
+      },
+      "course_name": "大学物理"
+    },
+    "PHYS1002": {
+      "course_name": "大学物理实验",
+      "default": {
+        "default": {
+          "grade": "每次实验得分的加权和 100%"
+        }
+      }
+    },
+    "SEIN1040": {
+      "course_name": "中国科技史话",
+      "default": {
+        "default": {
+          "grade": "平时 20% + 实验 40% + 课堂展示 40%"
+        }
+      }
+    },
+    "WOCD1008": {
+      "course_name": "日语I",
+      "default": {
+        "default": {
+          "grade": "平时成绩 100%"
+        }
+      }
+    },
+    "WRIT0001": {
+      "course_name": "写作与沟通",
+      "default": {
+        "default": {
+          "grade": "各小班成绩构成可能不同，通常包含平时表现、短文、长文和口头汇报。"
+        }
+      },
+      "寸熙": {
+        "default": {
+          "grade": "平时 15% + 短文 30% + 长文 40% + 口头报告 15%"
+        }
+      }
+    }
+  }
+}
