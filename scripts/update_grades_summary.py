@@ -61,7 +61,7 @@ def normalize_entry_key(course_variant: str) -> str:
         return f"{year}_{rest}"
 
     # Non-year variants in the upstream file.
-    return "default"
+    return "__DROP__"
 
 
 def parse_grade(raw: str) -> dict[str, Any]:
@@ -139,37 +139,33 @@ def main() -> None:
             continue
 
         entries: dict[str, Any] = {}
+        dropped_grade_strings: list[str] = []
 
         for variant_key, variant_obj in course_obj.items():
             if variant_key == "course_name":
                 continue  # explicitly removed per repo convention
 
-            entry_key = normalize_entry_key(str(variant_key))
             grade_strings = extract_grade_strings(variant_obj)
             if not grade_strings:
                 continue
 
-            # If multiple grade strings appear for the same entry_key, keep the first and
-            # append the rest into its note to remain lossless enough.
+            entry_key = normalize_entry_key(str(variant_key))
+            if entry_key == "__DROP__":
+                # Per request: drop non-year variants, but we may still use one of their values
+                # as a representative if nothing else exists for this course.
+                dropped_grade_strings.extend(grade_strings)
+                continue
+
+            # If multiple grade strings appear for the same entry_key, pick the first.
             first = grade_strings[0]
             grade_struct = parse_grade(first)
-            if len(grade_strings) > 1:
-                extra = " | ".join(grade_strings[1:])
-                grade_struct["note"] = (
-                    f"{grade_struct['note']} | {extra}" if grade_struct["note"] else extra
-                )
 
-            if entry_key in entries:
-                # Merge collision: keep existing and append this raw into note.
-                prev = entries[entry_key]["grade"]
-                prev_note = prev.get("note")
-                prev["note"] = (
-                    f"{prev_note} | ALT: {grade_struct['raw']}"
-                    if prev_note
-                    else f"ALT: {grade_struct['raw']}"
-                )
-            else:
-                entries[entry_key] = {"grade": grade_struct}
+            # If we see the same entry_key again, keep the first.
+            entries.setdefault(entry_key, {"grade": grade_struct})
+
+        # If the course had only non-year variants, keep ONE representative under "default".
+        if not entries and dropped_grade_strings:
+            entries["default"] = {"grade": parse_grade(dropped_grade_strings[0])}
 
         if entries:
             out_grades[course_code] = entries
