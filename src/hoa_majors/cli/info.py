@@ -68,7 +68,7 @@ def _print_grade_details(
         return
 
     print("-" * 60)
-    print("成绩构成 (来自 grades_summary.json):")
+    print("成绩构成")
     for item in grade_items:
         if not isinstance(item, dict):
             continue
@@ -76,9 +76,9 @@ def _print_grade_details(
         percent = item.get("percent")
         percent_str = str(percent).strip() if percent is not None else ""
         if percent_str:
-            print(f"  - {name}: {percent_str}")
+            print(f"{name}: {percent_str}")
         else:
-            print(f"  - {name}")
+            print(f"{name}")
 
 
 def get_course_info(plan_id: str, course_code: str, data_dir: Path):
@@ -94,19 +94,39 @@ def get_course_info(plan_id: str, course_code: str, data_dir: Path):
             for course in data.get("courses", []):
                 if course.get("course_code") == course_code:
                     found_course = True
-                    print(f"\n培养方案 {plan_id} 中的课程 {course_code} 详细信息:")
-                    print("=" * 60)
-                    # 打印核心字段
-                    for key, value in course.items():
-                        if key != "hours":
-                            print(f"{key.replace('_', ' ').title():<25}: {value}")
+                    # 基本信息
+                    print("\n基本信息")
+                    field_order = [
+                        ("course_code", "Course Code"),
+                        ("credit", "Credit"),
+                        ("assessment_method", "Assessment Method"),
+                        ("course_name", "Course Name"),
+                        ("recommended_year_semester", "Recommended Year Semester"),
+                        ("course_nature", "Course Nature"),
+                        ("course_category", "Course Category"),
+                        ("offering_college", "Offering College"),
+                        ("total_hours", "Total Hours"),
+                    ]
+                    label_width = 26
+                    for k, label in field_order:
+                        if k in course:
+                            print(f"{label:<{label_width}} : {course.get(k)}")
 
-                    # 打印学时子表
+                    # 学时分配
                     if "hours" in course:
                         print("-" * 60)
-                        print("学时分配:")
-                        for h_key, h_val in course["hours"].items():
-                            print(f"  {h_key.title():<23}: {h_val}")
+                        print("学时分配")
+                        hour_order = [
+                            ("theory", "Theory"),
+                            ("lab", "Lab"),
+                            ("practice", "Practice"),
+                            ("exercise", "Exercise"),
+                            ("computer", "Computer"),
+                            ("tutoring", "Tutoring"),
+                        ]
+                        for h_key, h_label in hour_order:
+                            if h_key in course["hours"]:
+                                print(f"{h_label:<{label_width}} : {course['hours'].get(h_key)}")
 
                     # Append grade details if we can find a matching summary entry.
                     _print_grade_details(
