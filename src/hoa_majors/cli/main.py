@@ -59,7 +59,14 @@ def main():
     info_parser = subparsers.add_parser("info", help="获取培养方案中特定课程的详细信息")
     info_parser.add_argument("plan_id", help="培养方案 ID (fah)")
     info_parser.add_argument("course_code", help="课程代码")
-    info_parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
+    info_parser.add_argument(
+        "--json",
+        action="store_true",
+        help="以纯 JSON 输出（仅输出课程与成绩构成等信息，不含格式化文本）",
+    )
+    info_parser.add_argument(
+        "--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录"
+    )
 
     # repo
     repo_parser = subparsers.add_parser("repo", help="获取课程对应的 OpenAuto 仓库 ID")
@@ -105,7 +112,7 @@ def main():
     elif args.command == "courses":
         courses.list_courses(args.plan_id, args.data_dir)
     elif args.command == "info":
-        info.get_course_info(args.plan_id, args.course_code, args.data_dir)
+        info.get_course_info(args.plan_id, args.course_code, args.data_dir, as_json=args.json)
     elif args.command == "repo":
         repo.run(args)
     else:

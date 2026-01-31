@@ -21,29 +21,33 @@ def _load_grades_summary(data_dir: Path) -> dict:
         return {}
 
 
-def _print_grade_details(
+def _select_grade_details(
     *,
     grades_summary: dict,
     course_code: str,
     year: str | None,
     major_code: str | None,
     major_name: str | None,
-):
-    """Append grade details for a course, if any match exists."""
+) -> tuple[list[dict] | None, str | None]:
+    """Select grade details for a course.
+
+    Returns:
+      (grade_items, matched_key)
+
+    Match order:
+      1) year_major
+      2) year_default
+      3) default
+    """
 
     entry = grades_summary.get(course_code)
     if not isinstance(entry, dict):
-        return
+        return None, None
 
     year = (year or "").strip()
     major_code = (major_code or "").strip()
     major_name = (major_name or "").strip()
 
-    # Selection order:
-    # 1) year_major
-    # 2) year_default
-    # 3) default
-    #
     # Note: upstream grades_summary.json uses year+major *name* (e.g. 2021_自动化).
     # The feature request mentions major code, so we try both code and name.
     year_major_keys: list[str] = []
@@ -54,17 +58,36 @@ def _print_grade_details(
 
     year_default_key = f"{year}_default" if year else ""
 
-    grade_items = None
     for k in year_major_keys:
-        if k in entry:
-            grade_items = entry.get(k)
-            break
-    if grade_items is None and year_default_key and year_default_key in entry:
-        grade_items = entry.get(year_default_key)
-    if grade_items is None and "default" in entry:
-        grade_items = entry.get("default")
+        if k in entry and isinstance(entry.get(k), list) and entry.get(k):
+            return entry.get(k), k
 
-    if not isinstance(grade_items, list) or not grade_items:
+    if year_default_key and year_default_key in entry and isinstance(entry.get(year_default_key), list) and entry.get(year_default_key):
+        return entry.get(year_default_key), year_default_key
+
+    if "default" in entry and isinstance(entry.get("default"), list) and entry.get("default"):
+        return entry.get("default"), "default"
+
+    return None, None
+
+
+def _print_grade_details(
+    *,
+    grades_summary: dict,
+    course_code: str,
+    year: str | None,
+    major_code: str | None,
+    major_name: str | None,
+):
+    grade_items, _ = _select_grade_details(
+        grades_summary=grades_summary,
+        course_code=course_code,
+        year=year,
+        major_code=major_code,
+        major_name=major_name,
+    )
+
+    if not grade_items:
         return
 
     print("-" * 60)
@@ -81,7 +104,7 @@ def _print_grade_details(
             print(f"{name}")
 
 
-def get_course_info(plan_id: str, course_code: str, data_dir: Path):
+def get_course_info(plan_id: str, course_code: str, data_dir: Path, as_json: bool = False):
     found_plan = False
     found_course = False
 
@@ -94,6 +117,31 @@ def get_course_info(plan_id: str, course_code: str, data_dir: Path):
             for course in data.get("courses", []):
                 if course.get("course_code") == course_code:
                     found_course = True
+
+                    grade_items, matched_grade_key = _select_grade_details(
+                        grades_summary=grades_summary,
+                        course_code=course_code,
+                        year=info.get("year"),
+                        major_code=info.get("major_code"),
+                        major_name=info.get("major_name"),
+                    )
+
+                    if as_json:
+                        out = {
+                            "plan_id": plan_id,
+                            "course_code": course_code,
+                            "course": {
+                                k: v
+                                for k, v in course.items()
+                                if k != "hours"  # keep hours in a separate object for cleanliness
+                            },
+                            "hours": course.get("hours"),
+                            "grade_details": grade_items,
+                            "grade_details_key": matched_grade_key,
+                        }
+                        print(json.dumps(out, ensure_ascii=False, indent=2))
+                        return
+
                     # 基本信息
                     print("\n基本信息")
                     field_order = [
@@ -126,7 +174,9 @@ def get_course_info(plan_id: str, course_code: str, data_dir: Path):
                         ]
                         for h_key, h_label in hour_order:
                             if h_key in course["hours"]:
-                                print(f"{h_label:<{label_width}} : {course['hours'].get(h_key)}")
+                                print(
+                                    f"{h_label:<{label_width}} : {course['hours'].get(h_key)}"
+                                )
 
                     # Append grade details if we can find a matching summary entry.
                     _print_grade_details(
@@ -154,10 +204,15 @@ def main():
     parser = argparse.ArgumentParser(description="获取培养方案中特定课程的详细信息")
     parser.add_argument("plan_id", help="培养方案 ID (fah)")
     parser.add_argument("course_code", help="课程代码")
+    parser.add_argument(
+        "--json",
+        action="store_true",
+        help="以纯 JSON 输出（仅输出课程与成绩构成等信息，不含格式化文本）",
+    )
     parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
     args = parser.parse_args()
 
-    get_course_info(args.plan_id, args.course_code, args.data_dir)
+    get_course_info(args.plan_id, args.course_code, args.data_dir, as_json=args.json)
 
 
 if __name__ == "__main__":
