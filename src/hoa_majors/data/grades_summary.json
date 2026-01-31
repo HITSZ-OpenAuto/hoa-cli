@@ -1,2596 +1,1870 @@
 {
-  "grades": {
-    "AUTO1001": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "课堂实验",
-              "percent": "30%"
-            },
-            {
-              "name": "机器人考核",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "30%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 课堂实验 30%+ 机器人考核 30% + 期末考试 30%"
-        }
-      }
-    },
-    "AUTO2001": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 40% + 期末考试 60%"
-        }
-      }
-    },
-    "AUTO2003B": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "大作业",
-              "percent": "100%"
-            }
-          ],
-          "note": null,
-          "raw": "大作业 100%"
-        }
-      }
-    },
-    "AUTO2005": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "25%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "65%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 25% + 期末考试 65%"
-        }
-      }
-    },
-    "AUTO2006": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时成绩",
-              "percent": "10%"
-            },
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "平时成绩 10% + 作业 20% + 期末考试 70%"
-        }
-      }
-    },
-    "AUTO3001A": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "13%"
-            },
-            {
-              "name": "课堂表现",
-              "percent": "5%"
-            },
-            {
-              "name": "上机实验",
-              "percent": "4%"
-            },
-            {
-              "name": "硬件实验",
-              "percent": "8%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 13% + 课堂表现 5% + 上机实验 4% + 硬件实验 8% + 期末考试 70%"
-        }
-      }
-    },
-    "AUTO3001B": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "12%"
-            },
-            {
-              "name": "出勤",
-              "percent": "5%"
-            },
-            {
-              "name": "上机实验",
-              "percent": "5%"
-            },
-            {
-              "name": "实验",
-              "percent": "8%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 12% + 出勤 5% + 上机实验 5% + 实验 8% + 期末考试 70% "
-        }
-      }
-    },
-    "AUTO3002A": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "25%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "65%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 25% + 期末考试 65%"
-        }
-      }
-    },
-    "AUTO3002B": {
-      "2021_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 40% + 期末考试 50%"
-        }
+  "AUTO1001": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
       },
-      "2023_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 30% + 期末考试 60%"
-        }
+      {
+        "name": "课堂实验",
+        "percent": "30%"
       },
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 40% + 期末考试 50%"
-        }
-      }
-    },
-    "AUTO3003": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "课程设计",
-              "percent": "25%"
-            },
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "45%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 课程设计 25%+ 实验 20% + 期末考试 45%"
-        }
-      }
-    },
-    "AUTO3004": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 20% + 期末考试 60%"
-        }
-      }
-    },
-    "AUTO3005": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "15%"
-            },
-            {
-              "name": "实验",
-              "percent": "15%"
-            },
-            {
-              "name": "课程设计",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 15% + 实验 15% + 课程设计 20% + 期末考试 50%"
-        }
-      }
-    },
-    "AUTO3006": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "考勤",
-              "percent": "5%"
-            },
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "课设",
-              "percent": "25%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "考勤 5% + 作业 10% + 实验 20% + 课设 25% + 期末考试 40%"
-        }
-      }
-    },
-    "AUTO3007": {
-      "2020_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 40% + 期末考试 40%"
-        }
+      {
+        "name": "机器人考核",
+        "percent": "30%"
       },
-      "2021_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 30% + 期末考试 50%"
-        }
+      {
+        "name": "期末考试",
+        "percent": "30%"
+      }
+    ]
+  },
+  "AUTO2001": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "40%"
       },
-      "2022_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 30% + 期末考试 50%"
-        }
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "AUTO2003B": {
+    "default": [
+      {
+        "name": "大作业",
+        "percent": "100%"
+      }
+    ]
+  },
+  "AUTO2005": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
       },
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 30% + 期末考试 50%"
-        }
-      }
-    },
-    "AUTO3011": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业+实验",
-              "percent": "50%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业+实验 50% + 期末考试 50%"
-        }
-      }
-    },
-    "AUTO3012": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "40%"
-            },
-            {
-              "name": "实验报告",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 40% + 实验报告 40%"
-        }
-      }
-    },
-    "AUTO3016": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "实验报告",
-              "percent": "90%"
-            },
-            {
-              "name": "答辩",
-              "percent": "10%"
-            }
-          ],
-          "note": "(10% × 9)",
-          "raw": "实验报告 90% (10% × 9) + 答辩 10%"
-        }
-      }
-    },
-    "AUTO3019": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时",
-              "percent": "10%"
-            },
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "报告",
-              "percent": "20%"
-            },
-            {
-              "name": "期末大作业",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "平时 10% + 作业 30% + 报告 20% + 期末大作业 40%"
-        }
-      }
-    },
-    "AUTO3022": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "报告",
-              "percent": "100%"
-            }
-          ],
-          "note": null,
-          "raw": "报告 100%"
-        }
-      }
-    },
-    "AUTO3024": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "50%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 50% + 期末考试 40%"
-        }
-      }
-    },
-    "AUTO3028": {
-      "2021_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 期末考试 70%"
-        }
+      {
+        "name": "实验",
+        "percent": "25%"
       },
-      "2023_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 40% + 期末考试 60%"
-        }
+      {
+        "name": "期末考试",
+        "percent": "65%"
       }
-    },
-    "AUTO3099": {
-      "2021_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "开题检查",
-              "percent": "2%"
-            },
-            {
-              "name": "中期检查",
-              "percent": "3%"
-            },
-            {
-              "name": "结题检查",
-              "percent": "5%"
-            },
-            {
-              "name": "指导老师评分",
-              "percent": "27%"
-            },
-            {
-              "name": "评阅老师评分",
-              "percent": "18%"
-            },
-            {
-              "name": "答辩小组评分",
-              "percent": "45%"
-            }
-          ],
-          "note": null,
-          "raw": "开题检查 2% + 中期检查 3% + 结题检查 5% + 指导老师评分 27% + 评阅老师评分 18% + 答辩小组评分 45%"
-        }
-      }
-    },
-    "AUTO5001": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 40% + 期末考试 60%"
-        }
-      }
-    },
-    "AUTO5002": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 40% + 期末考试 60%"
-        }
-      }
-    },
-    "AUTO5005": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时成绩",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "平时成绩 30% + 期末考试 70%"
-        }
-      }
-    },
-    "AUTO5013": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "出勤",
-              "percent": "10%"
-            },
-            {
-              "name": "项目",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 出勤 10% + 项目 40% + 期末考试 40%"
-        }
-      }
-    },
-    "AUTO5023": {
-      "2024_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业（含凸优化习题以及最优控制大作业）",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业（含凸优化习题以及最优控制大作业） 30% + 期末考试 70%"
-        }
+    ]
+  },
+  "AUTO2006": {
+    "default": [
+      {
+        "name": "平时成绩",
+        "percent": "10%"
       },
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "随堂测验",
-              "percent": "10%"
-            },
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "随堂测验 10% + 作业 20% + 期末考试 70%"
-        }
-      }
-    },
-    "AUTO5024": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "上机实验",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "上机实验 40% + 期末考试 60%"
-        }
-      }
-    },
-    "CHEM1012": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时",
-              "percent": "60%"
-            },
-            {
-              "name": "实验",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "平时 60% + 实验 40%"
-        }
-      }
-    },
-    "COMP1011": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 30% + 期末考试 60%"
-        }
-      }
-    },
-    "COMP2001": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 期末考试 70%"
-        }
-      }
-    },
-    "COMP2008": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 20% + 期末考试 70%"
-        }
-      }
-    },
-    "COMP2010": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 40% + 期末考试 60%"
-        }
-      }
-    },
-    "COMP2012": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "实验",
-              "percent": "100%"
-            }
-          ],
-          "note": null,
-          "raw": "实验 100%"
-        }
-      }
-    },
-    "COMP2014": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 40% + 期末考试 40%"
-        }
-      }
-    },
-    "COMP2029": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "过程检查",
-              "percent": "30%"
-            },
-            {
-              "name": "结题验收",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "过程检查 30% + 结题验收 70%"
-        }
-      }
-    },
-    "COMP2030": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 40% + 期末考试 60%"
-        }
-      }
-    },
-    "COMP2050": {
-      "2021_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "作业",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 20% + 作业 70%"
-        }
-      }
-    },
-    "COMP2051": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 30% + 期末考试 50%"
-        }
-      }
-    },
-    "COMP2052": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 20% + 期末考试 70%"
-        }
-      }
-    },
-    "COMP3001": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时分",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "平时分 10% + 实验 30% + 期末考试 60%"
-        }
-      }
-    },
-    "COMP3002": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 期末考试 70%"
-        }
-      }
-    },
-    "COMP3004": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 期末考试 70%"
-        }
-      }
-    },
-    "COMP3005": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 实验 30% + 期末考试 40%"
-        }
-      }
-    },
-    "COMP3006": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "Project",
-              "percent": "50%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + Project 50% + 期末考试 40%"
-        }
-      }
-    },
-    "COMP3007": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "90%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 期末考试 90%"
-        }
-      }
-    },
-    "COMP3009": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "大作业",
-              "percent": "40%"
-            },
-            {
-              "name": "小作业",
-              "percent": "30%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            }
-          ],
-          "note": null,
-          "raw": "大作业 40% + 小作业 30% + 实验 30%"
-        }
-      }
-    },
-    "COMP3010": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 30% + 期末考试 60%"
-        }
-      }
-    },
-    "COMP3011": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 40% + 期末考试 40%"
-        }
-      }
-    },
-    "COMP3013": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 20% + 期末考试 70%"
-        }
-      }
-    },
-    "COMP3017": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "Participation",
-              "percent": "5%"
-            },
-            {
-              "name": "Hot topic study journal",
-              "percent": "15%"
-            },
-            {
-              "name": "Exercises",
-              "percent": "20%"
-            },
-            {
-              "name": "Final Examination",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "Participation 5% + Hot topic study journal 15% + Exercises 20% + Final Examination 60%"
-        }
-      }
-    },
-    "COMP3018": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 期末考试 70%"
-        }
-      }
-    },
-    "COMP3019": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 40% + 期末考试 60%"
-        }
-      }
-    },
-    "COMP3021": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "比赛",
-              "percent": "60%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "比赛 60% + 期末考试 40%"
-        }
-      }
-    },
-    "COMP3028": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "Participation",
-              "percent": "10%"
-            },
-            {
-              "name": "Practical exercises",
-              "percent": "30%"
-            },
-            {
-              "name": "Final examination",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "Participation 10% + Practical exercises 30% + Final examination 60%"
-        }
-      }
-    },
-    "COMP3029": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "考勤",
-              "percent": "24%"
-            },
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "Final Project",
-              "percent": "36%"
-            }
-          ],
-          "note": null,
-          "raw": "考勤 24% + 作业 40% + Final Project 36%"
-        }
-      }
-    },
-    "COMP3030": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "随堂练习",
-              "percent": "10%"
-            },
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "大项目",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "随堂练习 10% + 作业 40% + 大项目 50%"
-        }
-      }
-    },
-    "COMP3039": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 40% + 期末考试 60%"
-        }
-      }
-    },
-    "COMP3040": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 30% + 期末考试 50%"
-        }
-      }
-    },
-    "COMP3043": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "实验",
-              "percent": "40%"
-            },
-            {
-              "name": "课堂小测",
-              "percent": "40%"
-            },
-            {
-              "name": "期末报告",
-              "percent": "20%"
-            }
-          ],
-          "note": null,
-          "raw": "实验 40% + 课堂小测 40% + 期末报告 20%"
-        }
-      }
-    },
-    "COMP3044": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "课堂参与",
-              "percent": "20%"
-            },
-            {
-              "name": "课堂展示",
-              "percent": "40%"
-            },
-            {
-              "name": "论文",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "课堂参与 20% + 课堂展示 40% + 论文 40%"
-        }
-      }
-    },
-    "COMP3052": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 20% + 期末考试 60%"
-        }
-      }
-    },
-    "COMP3053": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 实验 20% + 期末考试 60%"
-        }
-      }
-    },
-    "COMP3054": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 实验 30% + 期末考试 60%"
-        }
-      }
-    },
-    "COMP3059": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "10%"
-            },
-            {
-              "name": "上机实验",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 10% + 上机实验 40% + 期末考试 50%"
-        }
-      }
-    },
-    "COMP3060": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "开题报告",
-              "percent": "10%"
-            },
-            {
-              "name": "中期检查",
-              "percent": "20%"
-            },
-            {
-              "name": "结题报告",
-              "percent": "20%"
-            },
-            {
-              "name": "软件作品",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "开题报告 10% + 中期检查 20% + 结题报告 20% + 软件作品 50%"
-        }
-      }
-    },
-    "ECON2005F": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "考勤",
-              "percent": "20%"
-            },
-            {
-              "name": "生活中的经济学",
-              "percent": "20%"
-            },
-            {
-              "name": "期中考试",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "30%"
-            }
-          ],
-          "note": null,
-          "raw": "考勤 20% + 生活中的经济学 20% + 期中考试 30% + 期末考试 30%"
-        }
-      }
-    },
-    "EE1007": {
-      "2021_电气/通信、22级自动化": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "80%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 期末考试 80%"
-        }
+      {
+        "name": "作业",
+        "percent": "20%"
       },
-      "2021_自动化": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 期末考试 70%"
-        }
+      {
+        "name": "期末考试",
+        "percent": "70%"
       }
-    },
-    "EE1008": {
-      "default": {
-        "grade": {
-          "items": [],
-          "note": "MOOC预习题 按时完成实验（不按时完成，则适当扣分）+ 报告分数（无考试）",
-          "raw": "MOOC预习题 + 按时完成实验（不按时完成，则适当扣分）+ 报告分数（无考试）"
-        }
-      }
-    },
-    "EE1009": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时成绩",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "80%"
-            }
-          ],
-          "note": "(上课会有小测，以考勤为主，到场即有60分)",
-          "raw": "平时成绩 20% + 期末考试 80% (上课会有小测，以考勤为主，到场即有60分)"
-        }
-      }
-    },
-    "EE1010": {
-      "default": {
-        "grade": {
-          "items": [],
-          "note": "预习题 按时完成实验（不按时完成，则适当扣分）+ 报告分数",
-          "raw": "预习题 + 按时完成实验（不按时完成，则适当扣分）+ 报告分数"
-        }
-      }
-    },
-    "EE1011A": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "35%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "65%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 35% + 期末考试 65%"
-        }
-      }
-    },
-    "EE1011B": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "80%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 期末考试 80%"
-        }
-      }
-    },
-    "EE1012A": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "实验报告",
-              "percent": "100%"
-            }
-          ],
-          "note": null,
-          "raw": "实验报告 100%"
-        }
-      }
-    },
-    "EE1012B": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "实验报告",
-              "percent": "100%"
-            }
-          ],
-          "note": "出勤",
-          "raw": "出勤 + 实验报告 100%"
-        }
-      }
-    },
-    "EE1013": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "80%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 期末考试 80%"
-        }
-      }
-    },
-    "EE1014": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "实验报告",
-              "percent": "100%"
-            }
-          ],
-          "note": null,
-          "raw": "实验报告 100%"
-        }
-      }
-    },
-    "EE1018": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "80%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 期末考试 80%"
-        }
-      }
-    },
-    "EE2003": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "14%"
-            },
-            {
-              "name": "MOOC",
-              "percent": "12%"
-            },
-            {
-              "name": "实验",
-              "percent": "8%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "66%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 14% + MOOC 12% + 实验 8% + 期末考试 66%"
-        }
-      }
-    },
-    "EE2004": {
-      "2024_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "80%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 期末考试 80%"
-        }
-      }
-    },
-    "EE3002": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "期中考试",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "实验 20% + 期中考试 20% + 期末考试 60%"
-        }
-      }
-    },
-    "EE304X": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "实物验收",
-              "percent": "30%"
-            },
-            {
-              "name": "设计报告",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "实物验收 30% + 设计报告 70%"
-        }
-      }
-    },
-    "EMEC1002": {
-      "2024_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时考勤",
-              "percent": "10%"
-            },
-            {
-              "name": "作业&小测",
-              "percent": "20%"
-            },
-            {
-              "name": "期中考试",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "平时考勤 10% + 作业&小测 20% + 期中考试 20% + 期末考试 50%"
-        }
-      }
-    },
-    "ENGG1002": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "工程认知（课堂作业）",
-              "percent": "15%"
-            },
-            {
-              "name": "工程素养（出勤）",
-              "percent": "15%"
-            },
-            {
-              "name": "工程技能（训练内容）",
-              "percent": "30%"
-            },
-            {
-              "name": "工程综合（项目制作）",
-              "percent": "30%"
-            },
-            {
-              "name": "工程创新（项目创新）",
-              "percent": "10%"
-            }
-          ],
-          "note": null,
-          "raw": "工程认知（课堂作业） 15% + 工程素养（出勤） 15% + 工程技能（训练内容） 30% + 工程综合（项目制作） 30% + 工程创新（项目创新） 10%"
-        }
-      }
-    },
-    "ENGG1003": {
-      "2023_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "元器件识别",
-              "percent": "7%"
-            },
-            {
-              "name": "电子封装",
-              "percent": "7%"
-            },
-            {
-              "name": "电子可靠性",
-              "percent": "5%"
-            },
-            {
-              "name": "硬件设计",
-              "percent": "11%"
-            },
-            {
-              "name": "PCB设计",
-              "percent": "11%"
-            },
-            {
-              "name": "软件设计",
-              "percent": "18%"
-            },
-            {
-              "name": "焊接调试",
-              "percent": "11%"
-            },
-            {
-              "name": "项目制作",
-              "percent": "30%"
-            }
-          ],
-          "note": null,
-          "raw": "元器件识别 7% + 电子封装 7% + 电子可靠性 5% + 硬件设计 11% + PCB设计 11% + 软件设计 18% + 焊接调试 11% + 项目制作 30%"
-        }
+    ]
+  },
+  "AUTO3001A": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "13%"
       },
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "实验",
-              "percent": "100%"
-            }
-          ],
-          "note": "(具体细分参考年份配置)",
-          "raw": "实验 100% (具体细分参考年份配置)"
-        }
-      }
-    },
-    "GEIP1011": {
-      "2022_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "课堂表现",
-              "percent": "10%"
-            },
-            {
-              "name": "讨论与展示",
-              "percent": "20%"
-            },
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "课堂表现 10% + 讨论与展示 20% + 作业 20% + 期末考试 50%"
-        }
+      {
+        "name": "课堂表现",
+        "percent": "5%"
       },
-      "2023_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "课堂表现",
-              "percent": "4%"
-            },
-            {
-              "name": "小测",
-              "percent": "16%"
-            },
-            {
-              "name": "讨论与展示",
-              "percent": "10%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "课堂表现 4% + 小测 16% + 讨论与展示 10% + 期末考试 70%"
-        }
-      }
-    },
-    "GEIP1015": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时",
-              "percent": "50%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "平时 50% + 期末考试 50%"
-        }
-      }
-    },
-    "GEIP1016": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "课堂表现",
-              "percent": "10%"
-            },
-            {
-              "name": "讨论与展示",
-              "percent": "20%"
-            },
-            {
-              "name": "论文",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "课堂表现 10% + 讨论与展示 20% + 论文 20% + 期末考试 50%"
-        }
-      }
-    },
-    "GEIP1017": {
-      "2023_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时和课堂展示",
-              "percent": "20%"
-            },
-            {
-              "name": "期中论文",
-              "percent": "30%"
-            },
-            {
-              "name": "期末论文",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "平时和课堂展示 20% + 期中论文 30% + 期末论文 50%"
-        }
+      {
+        "name": "上机实验",
+        "percent": "4%"
       },
-      "2024_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时和课堂展示",
-              "percent": "20%"
-            },
-            {
-              "name": "期中论文",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "平时和课堂展示 20% + 期中论文 20% + 期末考试 60%"
-        }
+      {
+        "name": "硬件实验",
+        "percent": "8%"
       },
-      "2025_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时和课堂展示",
-              "percent": "24%"
-            },
-            {
-              "name": "期中论文",
-              "percent": "16%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "平时和课堂展示 24% + 期中论文 16% + 期末考试 60%"
-        }
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "AUTO3001B": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "12%"
       },
-      "default": {
-        "grade": {
-          "items": [],
-          "note": "请参考具体年份设置（23级为考查课，24级及以后为考试课）",
-          "raw": "请参考具体年份设置（23级为考查课，24级及以后为考试课）"
-        }
-      }
-    },
-    "GEIP1018": {
-      "2024_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "课程论文",
-              "percent": "10%"
-            },
-            {
-              "name": "小组汇报",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "课程论文 10% + 小组汇报 20% + 期末考试 70%"
-        }
-      }
-    },
-    "GEIP4004": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "出勤",
-              "percent": "10%"
-            },
-            {
-              "name": "论文",
-              "percent": "20%"
-            },
-            {
-              "name": "讨论与展示",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "出勤 10% + 论文 20% + 讨论与展示 20% + 期末考试 50%"
-        }
-      }
-    },
-    "LANG100X": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "40%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 40% + 期末考试 60%"
-        }
-      }
-    },
-    "MATH1002": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期中考试",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 期中考试 30% + 期末考试 50%"
-        }
-      }
-    },
-    "MATH1004": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "论文",
-              "percent": "10%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 论文 10% + 期末考试 70%"
-        }
-      }
-    },
-    "MATH1005": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "80%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 期末考试 80%"
-        }
-      }
-    },
-    "MATH1015A": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期中考试",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 期中考试 30% + 期末考试 50%"
-        }
-      }
-    },
-    "MATH1015B": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期中考试",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 20% + 期中考试 30% + 期末考试 50%"
-        }
-      }
-    },
-    "MATH4001": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 期末考试 70%"
-        }
-      }
-    },
-    "MATH4002": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 期末考试 70%"
-        }
-      }
-    },
-    "MATH4004": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "出勤",
-              "percent": "10%"
-            },
-            {
-              "name": "课堂测验及作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "出勤 10% + 课堂测验及作业 20% + 期末考试 70%"
-        }
-      }
-    },
-    "MECH2010": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时成绩",
-              "percent": "30%"
-            },
-            {
-              "name": "作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "平时成绩 30% + 作业 20% + 期末考试 50%"
-        }
-      }
-    },
-    "MECH2019": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时作业",
-              "percent": "20%"
-            },
-            {
-              "name": "大作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "平时作业 20% + 大作业 30% + 期末考试 50%"
-        }
-      }
-    },
-    "MECH2020": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "小作业",
-              "percent": "10%"
-            },
-            {
-              "name": "大作业",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "小作业 10% + 大作业 20% + 期末考试 70%"
-        }
-      }
-    },
-    "MECH2022": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "15%"
-            },
-            {
-              "name": "实验",
-              "percent": "15%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 15% + 实验 15% + 期末考试 70%"
-        }
-      }
-    },
-    "MECH3005": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "平时作业 20% + 实验 20% + 期末考试 60%"
-        }
-      }
-    },
-    "MECH3041": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "大作业",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "大作业 20% + 实验 30% + 期末考试 50%"
-        }
-      }
-    },
-    "MECH3060": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "25%"
-            },
-            {
-              "name": "实验",
-              "percent": "15%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "60%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 25% + 实验 15% + 期末考试 60%"
-        }
-      }
-    },
-    "PHYS1001": {
-      "2023_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "70%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 期末考试 70%"
-        }
+      {
+        "name": "出勤",
+        "percent": "5%"
       },
-      "2024_default": {
-        "grade": {
-          "items": [
-            {
-              "name": "作业",
-              "percent": "30%"
-            },
-            {
-              "name": "期中考试",
-              "percent": "20%"
-            },
-            {
-              "name": "期末考试",
-              "percent": "50%"
-            }
-          ],
-          "note": null,
-          "raw": "作业 30% + 期中考试 20% + 期末考试 50%"
-        }
+      {
+        "name": "上机实验",
+        "percent": "5%"
+      },
+      {
+        "name": "实验",
+        "percent": "8%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
       }
-    },
-    "PHYS1002": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "每次实验得分的加权和",
-              "percent": "100%"
-            }
-          ],
-          "note": null,
-          "raw": "每次实验得分的加权和 100%"
-        }
+    ]
+  },
+  "AUTO3002A": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "25%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "65%"
       }
-    },
-    "SEIN1040": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时",
-              "percent": "20%"
-            },
-            {
-              "name": "实验",
-              "percent": "40%"
-            },
-            {
-              "name": "课堂展示",
-              "percent": "40%"
-            }
-          ],
-          "note": null,
-          "raw": "平时 20% + 实验 40% + 课堂展示 40%"
-        }
+    ]
+  },
+  "AUTO3002B": {
+    "2021_default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
       }
-    },
-    "WOCD1008": {
-      "default": {
-        "grade": {
-          "items": [
-            {
-              "name": "平时成绩",
-              "percent": "100%"
-            }
-          ],
-          "note": null,
-          "raw": "平时成绩 100%"
-        }
+    ],
+    "2023_default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
       }
-    },
-    "WRIT0001": {
-      "default": {
-        "grade": {
-          "items": [],
-          "note": "各小班成绩构成可能不同，通常包含平时表现、短文、长文和口头汇报。",
-          "raw": "各小班成绩构成可能不同，通常包含平时表现、短文、长文和口头汇报。"
-        }
+    ],
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
       }
-    }
+    ]
+  },
+  "AUTO3003": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "课程设计",
+        "percent": "25%"
+      },
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "45%"
+      }
+    ]
+  },
+  "AUTO3004": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "AUTO3005": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "15%"
+      },
+      {
+        "name": "实验",
+        "percent": "15%"
+      },
+      {
+        "name": "课程设计",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "AUTO3006": {
+    "default": [
+      {
+        "name": "考勤",
+        "percent": "5%"
+      },
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "课设",
+        "percent": "25%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "40%"
+      }
+    ]
+  },
+  "AUTO3007": {
+    "2020_default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "40%"
+      }
+    ],
+    "2021_default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ],
+    "2022_default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ],
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "AUTO3011": {
+    "default": [
+      {
+        "name": "作业+实验",
+        "percent": "50%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "AUTO3012": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "40%"
+      },
+      {
+        "name": "实验报告",
+        "percent": "40%"
+      }
+    ]
+  },
+  "AUTO3016": {
+    "default": [
+      {
+        "name": "实验报告",
+        "percent": "90%"
+      },
+      {
+        "name": "答辩",
+        "percent": "10%"
+      }
+    ]
+  },
+  "AUTO3019": {
+    "default": [
+      {
+        "name": "平时",
+        "percent": "10%"
+      },
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "报告",
+        "percent": "20%"
+      },
+      {
+        "name": "期末大作业",
+        "percent": "40%"
+      }
+    ]
+  },
+  "AUTO3022": {
+    "default": [
+      {
+        "name": "报告",
+        "percent": "100%"
+      }
+    ]
+  },
+  "AUTO3024": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "50%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "40%"
+      }
+    ]
+  },
+  "AUTO3028": {
+    "2021_default": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ],
+    "2023_default": [
+      {
+        "name": "作业",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "AUTO3099": {
+    "2021_default": [
+      {
+        "name": "开题检查",
+        "percent": "2%"
+      },
+      {
+        "name": "中期检查",
+        "percent": "3%"
+      },
+      {
+        "name": "结题检查",
+        "percent": "5%"
+      },
+      {
+        "name": "指导老师评分",
+        "percent": "27%"
+      },
+      {
+        "name": "评阅老师评分",
+        "percent": "18%"
+      },
+      {
+        "name": "答辩小组评分",
+        "percent": "45%"
+      }
+    ]
+  },
+  "AUTO5001": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "AUTO5002": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "AUTO5005": {
+    "default": [
+      {
+        "name": "平时成绩",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "AUTO5013": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "出勤",
+        "percent": "10%"
+      },
+      {
+        "name": "项目",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "40%"
+      }
+    ]
+  },
+  "AUTO5023": {
+    "2024_default": [
+      {
+        "name": "作业（含凸优化习题以及最优控制大作业）",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ],
+    "default": [
+      {
+        "name": "随堂测验",
+        "percent": "10%"
+      },
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "AUTO5024": {
+    "default": [
+      {
+        "name": "上机实验",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "CHEM1012": {
+    "default": [
+      {
+        "name": "平时",
+        "percent": "60%"
+      },
+      {
+        "name": "实验",
+        "percent": "40%"
+      }
+    ]
+  },
+  "COMP1011": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP2001": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "COMP2008": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "COMP2010": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP2012": {
+    "default": [
+      {
+        "name": "实验",
+        "percent": "100%"
+      }
+    ]
+  },
+  "COMP2014": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "40%"
+      }
+    ]
+  },
+  "COMP2029": {
+    "default": [
+      {
+        "name": "过程检查",
+        "percent": "30%"
+      },
+      {
+        "name": "结题验收",
+        "percent": "70%"
+      }
+    ]
+  },
+  "COMP2030": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP2050": {
+    "2021_default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "作业",
+        "percent": "70%"
+      }
+    ]
+  },
+  "COMP2051": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "COMP2052": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "COMP3001": {
+    "default": [
+      {
+        "name": "平时分",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP3002": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "COMP3004": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "COMP3005": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "40%"
+      }
+    ]
+  },
+  "COMP3006": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "Project",
+        "percent": "50%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "40%"
+      }
+    ]
+  },
+  "COMP3007": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "90%"
+      }
+    ]
+  },
+  "COMP3009": {
+    "default": [
+      {
+        "name": "大作业",
+        "percent": "40%"
+      },
+      {
+        "name": "小作业",
+        "percent": "30%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      }
+    ]
+  },
+  "COMP3010": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP3011": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "40%"
+      }
+    ]
+  },
+  "COMP3013": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "COMP3017": {
+    "default": [
+      {
+        "name": "Participation",
+        "percent": "5%"
+      },
+      {
+        "name": "Hot topic study journal",
+        "percent": "15%"
+      },
+      {
+        "name": "Exercises",
+        "percent": "20%"
+      },
+      {
+        "name": "Final Examination",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP3018": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "COMP3019": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP3021": {
+    "default": [
+      {
+        "name": "比赛",
+        "percent": "60%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "40%"
+      }
+    ]
+  },
+  "COMP3028": {
+    "default": [
+      {
+        "name": "Participation",
+        "percent": "10%"
+      },
+      {
+        "name": "Practical exercises",
+        "percent": "30%"
+      },
+      {
+        "name": "Final examination",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP3029": {
+    "default": [
+      {
+        "name": "考勤",
+        "percent": "24%"
+      },
+      {
+        "name": "作业",
+        "percent": "40%"
+      },
+      {
+        "name": "Final Project",
+        "percent": "36%"
+      }
+    ]
+  },
+  "COMP3030": {
+    "default": [
+      {
+        "name": "随堂练习",
+        "percent": "10%"
+      },
+      {
+        "name": "作业",
+        "percent": "40%"
+      },
+      {
+        "name": "大项目",
+        "percent": "50%"
+      }
+    ]
+  },
+  "COMP3039": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP3040": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "COMP3043": {
+    "default": [
+      {
+        "name": "实验",
+        "percent": "40%"
+      },
+      {
+        "name": "课堂小测",
+        "percent": "40%"
+      },
+      {
+        "name": "期末报告",
+        "percent": "20%"
+      }
+    ]
+  },
+  "COMP3044": {
+    "default": [
+      {
+        "name": "课堂参与",
+        "percent": "20%"
+      },
+      {
+        "name": "课堂展示",
+        "percent": "40%"
+      },
+      {
+        "name": "论文",
+        "percent": "40%"
+      }
+    ]
+  },
+  "COMP3052": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP3053": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP3054": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "COMP3059": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "10%"
+      },
+      {
+        "name": "上机实验",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "COMP3060": {
+    "default": [
+      {
+        "name": "开题报告",
+        "percent": "10%"
+      },
+      {
+        "name": "中期检查",
+        "percent": "20%"
+      },
+      {
+        "name": "结题报告",
+        "percent": "20%"
+      },
+      {
+        "name": "软件作品",
+        "percent": "50%"
+      }
+    ]
+  },
+  "ECON2005F": {
+    "default": [
+      {
+        "name": "考勤",
+        "percent": "20%"
+      },
+      {
+        "name": "生活中的经济学",
+        "percent": "20%"
+      },
+      {
+        "name": "期中考试",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "30%"
+      }
+    ]
+  },
+  "EE1007": {
+    "2021_电气/通信、22级自动化": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "80%"
+      }
+    ],
+    "2021_自动化": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "EE1008": {
+    "default": [
+      {
+        "name": "MOOC预习题",
+        "percent": null
+      },
+      {
+        "name": "按时完成实验（不按时完成，则适当扣分）+ 报告分数（无考试）",
+        "percent": null
+      }
+    ]
+  },
+  "EE1009": {
+    "default": [
+      {
+        "name": "平时成绩",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "80%"
+      }
+    ]
+  },
+  "EE1010": {
+    "default": [
+      {
+        "name": "预习题",
+        "percent": null
+      },
+      {
+        "name": "按时完成实验（不按时完成，则适当扣分）+ 报告分数",
+        "percent": null
+      }
+    ]
+  },
+  "EE1011A": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "35%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "65%"
+      }
+    ]
+  },
+  "EE1011B": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "80%"
+      }
+    ]
+  },
+  "EE1012A": {
+    "default": [
+      {
+        "name": "实验报告",
+        "percent": "100%"
+      }
+    ]
+  },
+  "EE1012B": {
+    "default": [
+      {
+        "name": "出勤",
+        "percent": null
+      },
+      {
+        "name": "实验报告",
+        "percent": "100%"
+      }
+    ]
+  },
+  "EE1013": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "80%"
+      }
+    ]
+  },
+  "EE1014": {
+    "default": [
+      {
+        "name": "实验报告",
+        "percent": "100%"
+      }
+    ]
+  },
+  "EE1018": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "80%"
+      }
+    ]
+  },
+  "EE2003": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "14%"
+      },
+      {
+        "name": "MOOC",
+        "percent": "12%"
+      },
+      {
+        "name": "实验",
+        "percent": "8%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "66%"
+      }
+    ]
+  },
+  "EE2004": {
+    "2024_default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "80%"
+      }
+    ]
+  },
+  "EE3002": {
+    "default": [
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "期中考试",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "EE304X": {
+    "default": [
+      {
+        "name": "实物验收",
+        "percent": "30%"
+      },
+      {
+        "name": "设计报告",
+        "percent": "70%"
+      }
+    ]
+  },
+  "EMEC1002": {
+    "2024_default": [
+      {
+        "name": "平时考勤",
+        "percent": "10%"
+      },
+      {
+        "name": "作业&小测",
+        "percent": "20%"
+      },
+      {
+        "name": "期中考试",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "ENGG1002": {
+    "default": [
+      {
+        "name": "工程认知（课堂作业）",
+        "percent": "15%"
+      },
+      {
+        "name": "工程素养（出勤）",
+        "percent": "15%"
+      },
+      {
+        "name": "工程技能（训练内容）",
+        "percent": "30%"
+      },
+      {
+        "name": "工程综合（项目制作）",
+        "percent": "30%"
+      },
+      {
+        "name": "工程创新（项目创新）",
+        "percent": "10%"
+      }
+    ]
+  },
+  "ENGG1003": {
+    "2023_default": [
+      {
+        "name": "元器件识别",
+        "percent": "7%"
+      },
+      {
+        "name": "电子封装",
+        "percent": "7%"
+      },
+      {
+        "name": "电子可靠性",
+        "percent": "5%"
+      },
+      {
+        "name": "硬件设计",
+        "percent": "11%"
+      },
+      {
+        "name": "PCB设计",
+        "percent": "11%"
+      },
+      {
+        "name": "软件设计",
+        "percent": "18%"
+      },
+      {
+        "name": "焊接调试",
+        "percent": "11%"
+      },
+      {
+        "name": "项目制作",
+        "percent": "30%"
+      }
+    ],
+    "default": [
+      {
+        "name": "实验",
+        "percent": "100%"
+      }
+    ]
+  },
+  "GEIP1011": {
+    "2022_default": [
+      {
+        "name": "课堂表现",
+        "percent": "10%"
+      },
+      {
+        "name": "讨论与展示",
+        "percent": "20%"
+      },
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ],
+    "2023_default": [
+      {
+        "name": "课堂表现",
+        "percent": "4%"
+      },
+      {
+        "name": "小测",
+        "percent": "16%"
+      },
+      {
+        "name": "讨论与展示",
+        "percent": "10%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "GEIP1015": {
+    "default": [
+      {
+        "name": "平时",
+        "percent": "50%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "GEIP1016": {
+    "default": [
+      {
+        "name": "课堂表现",
+        "percent": "10%"
+      },
+      {
+        "name": "讨论与展示",
+        "percent": "20%"
+      },
+      {
+        "name": "论文",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "GEIP1017": {
+    "2023_default": [
+      {
+        "name": "平时和课堂展示",
+        "percent": "20%"
+      },
+      {
+        "name": "期中论文",
+        "percent": "30%"
+      },
+      {
+        "name": "期末论文",
+        "percent": "50%"
+      }
+    ],
+    "2024_default": [
+      {
+        "name": "平时和课堂展示",
+        "percent": "20%"
+      },
+      {
+        "name": "期中论文",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ],
+    "2025_default": [
+      {
+        "name": "平时和课堂展示",
+        "percent": "24%"
+      },
+      {
+        "name": "期中论文",
+        "percent": "16%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ],
+    "default": [
+      {
+        "name": "请参考具体年份设置（23级为考查课，24级及以后为考试课）",
+        "percent": null
+      }
+    ]
+  },
+  "GEIP1018": {
+    "2024_default": [
+      {
+        "name": "课程论文",
+        "percent": "10%"
+      },
+      {
+        "name": "小组汇报",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "GEIP4004": {
+    "default": [
+      {
+        "name": "出勤",
+        "percent": "10%"
+      },
+      {
+        "name": "论文",
+        "percent": "20%"
+      },
+      {
+        "name": "讨论与展示",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "LANG100X": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "40%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "MATH1002": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期中考试",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "MATH1004": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "论文",
+        "percent": "10%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "MATH1005": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "80%"
+      }
+    ]
+  },
+  "MATH1015A": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期中考试",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "MATH1015B": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期中考试",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "MATH4001": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "MATH4002": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "MATH4004": {
+    "default": [
+      {
+        "name": "出勤",
+        "percent": "10%"
+      },
+      {
+        "name": "课堂测验及作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "MECH2010": {
+    "default": [
+      {
+        "name": "平时成绩",
+        "percent": "30%"
+      },
+      {
+        "name": "作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "MECH2019": {
+    "default": [
+      {
+        "name": "平时作业",
+        "percent": "20%"
+      },
+      {
+        "name": "大作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "MECH2020": {
+    "default": [
+      {
+        "name": "小作业",
+        "percent": "10%"
+      },
+      {
+        "name": "大作业",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "MECH2022": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "15%"
+      },
+      {
+        "name": "实验",
+        "percent": "15%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ]
+  },
+  "MECH3005": {
+    "default": [
+      {
+        "name": "平时作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "MECH3041": {
+    "default": [
+      {
+        "name": "大作业",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "MECH3060": {
+    "default": [
+      {
+        "name": "作业",
+        "percent": "25%"
+      },
+      {
+        "name": "实验",
+        "percent": "15%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "60%"
+      }
+    ]
+  },
+  "PHYS1001": {
+    "2023_default": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "70%"
+      }
+    ],
+    "2024_default": [
+      {
+        "name": "作业",
+        "percent": "30%"
+      },
+      {
+        "name": "期中考试",
+        "percent": "20%"
+      },
+      {
+        "name": "期末考试",
+        "percent": "50%"
+      }
+    ]
+  },
+  "PHYS1002": {
+    "default": [
+      {
+        "name": "每次实验得分的加权和",
+        "percent": "100%"
+      }
+    ]
+  },
+  "SEIN1040": {
+    "default": [
+      {
+        "name": "平时",
+        "percent": "20%"
+      },
+      {
+        "name": "实验",
+        "percent": "40%"
+      },
+      {
+        "name": "课堂展示",
+        "percent": "40%"
+      }
+    ]
+  },
+  "WOCD1008": {
+    "default": [
+      {
+        "name": "平时成绩",
+        "percent": "100%"
+      }
+    ]
+  },
+  "WRIT0001": {
+    "default": [
+      {
+        "name": "各小班成绩构成可能不同，通常包含平时表现、短文、长文和口头汇报。",
+        "percent": null
+      }
+    ]
   }
 }

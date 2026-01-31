@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """Update grades_summary.json from repos-management/grades_summary.toml.
 
-Schema (per course/year/variant grade entry):
-  grade = {
-    "raw": <original string>,
-    "items": [ {"name": <str>, "percent": <str>} ... ],
-    "note": <str | null>
-  }
+Output schema:
+- Top-level is a mapping: { <course_code>: { <entry_key>: <grade_items> } }
+- entry_key is one of:
+  - default
+  - 入学年份_default (e.g. 2024_default)
+  - 入学年份_专业 (e.g. 2021_自动化)
+- grade_items is a flat ordered list: [ {"name": <str>, "percent": <str|null>} ... ]
 
-Rationale:
-- Always preserves the original text in `raw`.
-- Provides a structured list in `items` when parseable.
-- Captures any leftover/annotation text in `note`.
+Notes:
+- We intentionally do NOT output course_name / grades wrapper / raw / note.
+- For unparseable segments, percent is null and name keeps the original text.
 """
 
 from __future__ import annotations
@@ -64,10 +64,13 @@ def normalize_entry_key(course_variant: str) -> str:
     return "__DROP__"
 
 
-def parse_grade(raw: str) -> dict[str, Any]:
-    """Parse a grade string into a structured object.
+def parse_grade(raw: str) -> list[dict[str, Any]]:
+    """Parse a grade string into a flat list of items.
 
-    We aim for best-effort parsing while keeping raw text intact.
+    Output item format:
+      {"name": <str>, "percent": <str | None>}
+
+    For unparseable segments, percent is None and name preserves the text.
     """
 
     raw_norm = raw.replace("＋", "+")
@@ -79,31 +82,19 @@ def parse_grade(raw: str) -> dict[str, Any]:
     split_re = r"(?<=%)\s*\+\s*|\s+\+\s+"
     parts = [p.strip() for p in re.split(split_re, raw_norm) if p.strip()]
 
-    items: list[dict[str, str]] = []
-    notes: list[str] = []
+    items: list[dict[str, Any]] = []
 
     for part in parts or [raw_norm.strip()]:
         m = PERCENT_RE.search(part)
         if not m:
-            # Not parseable as a (name, percent) pair.
-            notes.append(part)
+            items.append({"name": part, "percent": None})
             continue
 
         percent = m.group(1)
-        name = part[: m.start()].strip()
-        tail = part[m.end() :].strip()
-
-        # If the "name" is empty, treat as note to avoid producing nonsense keys.
-        if not name:
-            notes.append(part)
-            continue
-
+        name = part[: m.start()].strip() or part
         items.append({"name": name, "percent": percent})
-        if tail:
-            notes.append(tail)
 
-    note = " ".join(n for n in notes if n).strip() or None
-    return {"raw": raw, "items": items, "note": note}
+    return items
 
 
 def extract_grade_strings(obj: Any) -> list[str]:
@@ -158,19 +149,19 @@ def main() -> None:
 
             # If multiple grade strings appear for the same entry_key, pick the first.
             first = grade_strings[0]
-            grade_struct = parse_grade(first)
+            grade_items = parse_grade(first)
 
             # If we see the same entry_key again, keep the first.
-            entries.setdefault(entry_key, {"grade": grade_struct})
+            entries.setdefault(entry_key, grade_items)
 
         # If the course had only non-year variants, keep ONE representative under "default".
         if not entries and dropped_grade_strings:
-            entries["default"] = {"grade": parse_grade(dropped_grade_strings[0])}
+            entries["default"] = parse_grade(dropped_grade_strings[0])
 
         if entries:
             out_grades[course_code] = entries
 
-    out = {"grades": out_grades}
+    out = out_grades
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(
