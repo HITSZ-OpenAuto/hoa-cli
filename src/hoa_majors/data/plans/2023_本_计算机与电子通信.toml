@@ -1,62 +1,24 @@
 [info]
-year = "2024"
-major_code = "23L03"
-major_name = "工科试验班（机器人与智能装备）"
-school_name = "智能学部"
-plan_ID = "1EC419DA5F148A04E0630B18F80AFC15"
+year = "2023"
+major_code = "23L01"
+major_name = "计算机与电子通信"
+school_name = "基础学部"
+plan_ID = "036AFBBC3A82730EE0630B18F80A0DED"
 
 [[courses]]
-course_code = "BIO1002"
-credit = 2.0
-assessment_method = "考查"
-course_name = "生命与健康科学"
-recommended_year_semester = "第一学年秋季"
-track = "化学/生命科学课组"
-course_nature = "限选"
-course_category = "其他"
-offering_college = "理学院"
-total_hours = 32
-
-[courses.hours]
-theory = 32
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "CHEM1007"
-credit = 2.0
-assessment_method = "考查"
-course_name = "大学化学II"
-recommended_year_semester = "第一学年秋季"
-track = "化学/生命科学课组"
-course_nature = "限选"
-course_category = "其他"
-offering_college = "理学院"
-total_hours = 32
-
-[courses.hours]
-theory = 24
-lab = 8
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "COMP1011"
-credit = 4.0
+course_code = "COMP2021"
+credit = 3.0
 assessment_method = "考试"
-course_name = "程序设计思维与实践"
+course_name = "高级语言程序设计"
 recommended_year_semester = "第一学年秋季"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "计算机科学与技术学院"
-total_hours = 64
+total_hours = 48
 
 [courses.hours]
-theory = 48
-lab = 16
+theory = 28
+lab = 20
 practice = 0
 exercise = 0
 computer = 0
@@ -100,7 +62,7 @@ tutoring = 0
 [[courses]]
 course_code = "GEIP1017"
 credit = 2.5
-assessment_method = "考试"
+assessment_method = "考查"
 course_name = "习近平新时代中国特色社会主义思想概论"
 recommended_year_semester = "第一学年秋季"
 course_nature = "必修"
@@ -196,12 +158,12 @@ recommended_year_semester = "第一学年秋季"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "学生工作部（处）（基础学部）｜团委｜武装部"
-total_hours = 120
+total_hours = 0
 
 [courses.hours]
 theory = 0
 lab = 0
-practice = 3
+practice = 2
 exercise = 0
 computer = 0
 tutoring = 0
@@ -242,10 +204,46 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "EE1019"
+course_code = "CAEC1001"
+credit = 1.0
+assessment_method = "考查"
+course_name = "计算机与电子通信集群专业导论"
+recommended_year_semester = "第一学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "计算机科学与技术学院"
+total_hours = 16
+
+[courses.hours]
+theory = 16
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "COMP1009"
+credit = 2.0
+assessment_method = "考查"
+course_name = "计算思维与信息基础"
+recommended_year_semester = "第一学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "计算机科学与技术学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "EE1013"
 credit = 4.0
 assessment_method = "考试"
-course_name = "电路与电子学II"
+course_name = "电路与电子学"
 recommended_year_semester = "第一学年春季"
 course_nature = "必修"
 course_category = "其他"
@@ -260,10 +258,10 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "EE1022"
+course_code = "EE1014"
 credit = 1.0
 assessment_method = "考查"
-course_name = "电路与电子技术实验II"
+course_name = "电路与电子技术实验"
 recommended_year_semester = "第一学年春季"
 course_nature = "必修"
 course_category = "其他"
@@ -350,24 +348,6 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "MECH1009"
-credit = 1.0
-assessment_method = "考查"
-course_name = "机器人与智能装备类专业导论"
-recommended_year_semester = "第一学年春季"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "机器人与先进制造学院"
-total_hours = 16
-
-[courses.hours]
-theory = 16
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
 course_code = "NESC1001"
 credit = 1.0
 assessment_method = "考查"
@@ -433,8 +413,8 @@ offering_college = "理学院"
 total_hours = 24
 
 [courses.hours]
-theory = 2
-lab = 22
+theory = 3
+lab = 21
 practice = 0
 exercise = 0
 computer = 0
@@ -447,7 +427,7 @@ course_name = "劳动教育概论"
 recommended_year_semester = "第二学年秋季"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "马克思主义学院"
+offering_college = "智慧树"
 total_hours = 8
 
 [courses.hours]
@@ -458,15 +438,14 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "EE2004"
+course_code = "COMP2030"
 credit = 4.0
-assessment_method = "考查"
-course_name = "高等电路与电子分析"
+assessment_method = "考试"
+course_name = "离散数学"
 recommended_year_semester = "第二学年秋季"
-track = "大类专业基础课程二选一"
-course_nature = "限选"
+course_nature = "必修"
 course_category = "其他"
-offering_college = "机器人与先进制造学院"
+offering_college = "计算机科学与技术学院"
 total_hours = 64
 
 [courses.hours]
@@ -477,20 +456,39 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "EMEC1002"
-credit = 4.0
+course_code = "COMP2051"
+credit = 3.5
 assessment_method = "考查"
-course_name = "理论力学II"
+course_name = "数字逻辑设计"
 recommended_year_semester = "第二学年秋季"
-track = "大类专业基础课程二选一"
+track = "三选一"
 course_nature = "限选"
 course_category = "其他"
-offering_college = "理学院"
-total_hours = 64
+offering_college = "计算机科学与技术学院"
+total_hours = 56
 
 [courses.hours]
-theory = 64
-lab = 0
+theory = 36
+lab = 20
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ELEC2016"
+credit = 3.5
+assessment_method = "考查"
+course_name = "数字逻辑电路设计"
+recommended_year_semester = "第二学年秋季"
+track = "三选一"
+course_nature = "限选"
+course_category = "其他"
+offering_college = "信息科学与技术学院"
+total_hours = 56
+
+[courses.hours]
+theory = 40
+lab = 16
 practice = 0
 exercise = 0
 computer = 0
@@ -552,7 +550,7 @@ tutoring = 0
 [[courses]]
 course_code = "MATH1005"
 credit = 2.0
-assessment_method = "考试"
+assessment_method = "考查"
 course_name = "复变函数与积分变换"
 recommended_year_semester = "第二学年秋季"
 course_nature = "必修"
@@ -568,19 +566,38 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "MECH2019"
-credit = 3.0
+course_code = "MATH2010"
+credit = 2.0
 assessment_method = "考查"
-course_name = "设计与制造A"
+course_name = "最优化方法"
 recommended_year_semester = "第二学年秋季"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "机器人与先进制造学院"
+offering_college = "理学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "MATH2011"
+credit = 3.0
+assessment_method = "考查"
+course_name = "高等代数"
+recommended_year_semester = "第二学年秋季"
+track = "三选一"
+course_nature = "限选"
+course_category = "其他"
+offering_college = "理学院"
 total_hours = 48
 
 [courses.hours]
-theory = 48
-lab = 0
+theory = 40
+lab = 8
 practice = 0
 exercise = 0
 computer = 0
@@ -640,93 +657,38 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "WRIT0001"
-credit = 1.0
+course_code = "COMP2008"
+credit = 3.5
 assessment_method = "考查"
-course_name = "写作与沟通"
-recommended_year_semester = "第二学年秋季"
-course_nature = "必修"
+course_name = "计算机组成原理"
+recommended_year_semester = "第二学年春季"
+track = "四选一"
+course_nature = "限选"
 course_category = "其他"
-offering_college = "人文艺术学系"
-total_hours = 24
+offering_college = "计算机科学与技术学院"
+total_hours = 56
 
 [courses.hours]
-theory = 24
-lab = 0
+theory = 40
+lab = 16
 practice = 0
 exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "AUTO2004"
-credit = 2.5
-assessment_method = "考查"
-course_name = "机器人设计与实践"
-recommended_year_semester = "第二学年春季"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "智能科学与工程学院"
-total_hours = 40
-
-[courses.hours]
-theory = 16
-lab = 0
-practice = 0
-exercise = 0
-computer = 24
-tutoring = 0
-[[courses]]
-course_code = "AUTO2005"
-credit = 3.0
+course_code = "COMP2052"
+credit = 3.5
 assessment_method = "考试"
-course_name = "信号分析与处理"
+course_name = "数据结构与算法"
 recommended_year_semester = "第二学年春季"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "智能科学与工程学院"
-total_hours = 48
+offering_college = "计算机科学与技术学院"
+total_hours = 56
 
 [courses.hours]
-theory = 36
-lab = 12
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "AUTO2006"
-credit = 3.0
-assessment_method = "考查"
-course_name = "控制理论中的代数基础"
-recommended_year_semester = "第二学年春季"
-track = "大类专业基础课程3（二选一）"
-course_nature = "限选"
-course_category = "其他"
-offering_college = "智能科学与工程学院"
-total_hours = 48
-
-[courses.hours]
-theory = 48
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "AUTO2009"
-credit = 2.0
-assessment_method = "考查"
-course_name = "机器人力学分析"
-recommended_year_semester = "第二学年春季"
-track = "大类专业基础课程2（二选一）"
-course_nature = "限选"
-course_category = "其他"
-offering_college = "智能科学与工程学院"
-total_hours = 32
-
-[courses.hours]
-theory = 24
-lab = 8
+theory = 40
+lab = 16
 practice = 0
 exercise = 0
 computer = 0
@@ -734,11 +696,10 @@ tutoring = 0
 [[courses]]
 course_code = "COMP3052"
 credit = 3.0
-assessment_method = "考查"
+assessment_method = "考试"
 course_name = "计算机系统"
 recommended_year_semester = "第二学年春季"
-track = "大类专业基础课程4（二选一）"
-course_nature = "限选"
+course_nature = "必修"
 course_category = "其他"
 offering_college = "计算机科学与技术学院"
 total_hours = 48
@@ -751,20 +712,76 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "ENGG1008"
-credit = 2.0
+course_code = "ELEC2017"
+credit = 1.0
 assessment_method = "考查"
-course_name = "工程训练（制造工艺实习）I"
+course_name = "信息论导论"
 recommended_year_semester = "第二学年春季"
 course_nature = "必修"
 course_category = "其他"
-offering_college = "实验与创新实践教育中心（分析测试中心）"
-total_hours = 80
+offering_college = "信息科学与技术学院"
+total_hours = 16
 
 [courses.hours]
-theory = 0
+theory = 16
 lab = 0
-practice = 2
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ELEC2018"
+credit = 3.5
+assessment_method = "考试"
+course_name = "信号与系统"
+recommended_year_semester = "第二学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "信息科学与技术学院"
+total_hours = 64
+
+[courses.hours]
+theory = 48
+lab = 8
+practice = 8
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ELEC2019"
+credit = 3.5
+assessment_method = "考查"
+course_name = "通信电子线路"
+recommended_year_semester = "第二学年春季"
+track = "四选一"
+course_nature = "限选"
+course_category = "其他"
+offering_college = "信息科学与技术学院"
+total_hours = 56
+
+[courses.hours]
+theory = 40
+lab = 16
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ELEC3005"
+credit = 3.5
+assessment_method = "考查"
+course_name = "电磁场与电磁波"
+recommended_year_semester = "第二学年春季"
+track = "四选一"
+course_nature = "限选"
+course_category = "其他"
+offering_college = "信息科学与技术学院"
+total_hours = 56
+
+[courses.hours]
+theory = 40
+lab = 16
+practice = 0
 exercise = 0
 computer = 0
 tutoring = 0
@@ -805,58 +822,20 @@ exercise = 0
 computer = 0
 tutoring = 0
 [[courses]]
-course_code = "MECH2020"
+course_code = "MATH2012"
 credit = 3.0
 assessment_method = "考查"
-course_name = "设计与制造B"
+course_name = "数学分析原理"
 recommended_year_semester = "第二学年春季"
-track = "大类专业基础课程4（二选一）"
+track = "四选一"
 course_nature = "限选"
 course_category = "其他"
-offering_college = "机器人与先进制造学院"
+offering_college = "理学院"
 total_hours = 48
 
 [courses.hours]
 theory = 48
 lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "MECH2021"
-credit = 2.0
-assessment_method = "考查"
-course_name = "动力学与控制"
-recommended_year_semester = "第二学年春季"
-track = "大类专业基础课程2（二选一）"
-course_nature = "限选"
-course_category = "其他"
-offering_college = "机器人与先进制造学院"
-total_hours = 32
-
-[courses.hours]
-theory = 24
-lab = 8
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
-course_code = "MECH2022"
-credit = 3.0
-assessment_method = "考查"
-course_name = "固体力学"
-recommended_year_semester = "第二学年春季"
-track = "大类专业基础课程3（二选一）"
-course_nature = "限选"
-course_category = "其他"
-offering_college = "机器人与先进制造学院"
-total_hours = 48
-
-[courses.hours]
-theory = 40
-lab = 8
 practice = 0
 exercise = 0
 computer = 0
@@ -879,3 +858,147 @@ practice = 0
 exercise = 0
 computer = 0
 tutoring = 16
+[[courses]]
+course_code = "WRIT0001"
+credit = 1.0
+assessment_method = "考查"
+course_name = "写作与沟通"
+recommended_year_semester = "第二学年春季"
+course_nature = "必修"
+course_category = "世界文明与对话"
+offering_college = "人文与社会科学学院"
+total_hours = 24
+
+[courses.hours]
+theory = 24
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "COMP2010"
+credit = 2.0
+assessment_method = "考查"
+course_name = "近世代数"
+recommended_year_semester = "第二学年夏季"
+course_nature = "选修"
+course_category = "其他"
+offering_college = "计算机科学与技术学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "COMP2012"
+credit = 3.0
+assessment_method = "考查"
+course_name = "计算机设计与实践"
+recommended_year_semester = "第二学年夏季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "计算机科学与技术学院"
+total_hours = 48
+
+[courses.hours]
+theory = 4
+lab = 44
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ELEC2015"
+credit = 2.0
+assessment_method = "考查"
+course_name = "通信电路设计综合实践项目"
+recommended_year_semester = "第二学年夏季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "信息科学与技术学院"
+total_hours = 0
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 2
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ELEC3017"
+credit = 2.0
+assessment_method = "考查"
+course_name = "FPGA设计与应用"
+recommended_year_semester = "第二学年夏季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "信息科学与技术学院"
+total_hours = 0
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 2
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "MATH3027"
+credit = 2.0
+assessment_method = "考查"
+course_name = "数学实践"
+recommended_year_semester = "第二学年夏季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "理学院"
+total_hours = 32
+
+[courses.hours]
+theory = 0
+lab = 0
+practice = 32
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "MATH3028"
+credit = 2.0
+assessment_method = "考查"
+course_name = "数学建模"
+recommended_year_semester = "第二学年夏季"
+course_nature = "限选"
+course_category = "其他"
+offering_college = "理学院"
+total_hours = 32
+
+[courses.hours]
+theory = 24
+lab = 8
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
+[[courses]]
+course_code = "ENGG1003"
+credit = 2.0
+assessment_method = "考查"
+course_name = "工程训练（电子工艺实习）"
+recommended_year_semester = "第三学年秋季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "实验与创新实践教育中心（分析测试中心）"
+total_hours = 0
+
+[courses.hours]
+theory = 80
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0

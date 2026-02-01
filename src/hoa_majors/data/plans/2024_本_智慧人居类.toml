@@ -1,9 +1,9 @@
 [info]
-year = "2023"
-major_code = "23L05"
-major_name = "建筑类／工科试验班（智慧人居类）"
-school_name = "建筑学院"
-plan_ID = "036AFF7CBFB00D09E0630C18F80ABDAA"
+year = "2024"
+major_code = "24L02"
+major_name = "智慧人居类"
+school_name = "基础学部"
+plan_ID = "1EC4BB7596F15CA2E0630B18F80A9458"
 
 [[courses]]
 course_code = "ARCH2111"
@@ -78,24 +78,6 @@ exercise = 0
 computer = 0
 tutoring = 1
 [[courses]]
-course_code = "COMP1009"
-credit = 2.0
-assessment_method = "考查"
-course_name = "计算思维与信息基础"
-recommended_year_semester = "第一学年秋季"
-course_nature = "必修"
-course_category = "其他"
-offering_college = "计算机科学与技术学院"
-total_hours = 32
-
-[courses.hours]
-theory = 32
-lab = 0
-practice = 0
-exercise = 0
-computer = 0
-tutoring = 0
-[[courses]]
 course_code = "GEIP1014"
 credit = 2.0
 assessment_method = "考查"
@@ -134,7 +116,7 @@ tutoring = 0
 [[courses]]
 course_code = "GEIP1017"
 credit = 2.5
-assessment_method = "考查"
+assessment_method = "考试"
 course_name = "习近平新时代中国特色社会主义思想概论"
 recommended_year_semester = "第一学年秋季"
 course_nature = "必修"
@@ -212,12 +194,12 @@ recommended_year_semester = "第一学年秋季"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "学生工作部（处）（基础学部）｜团委｜武装部"
-total_hours = 0
+total_hours = 120
 
 [courses.hours]
-theory = 80
+theory = 0
 lab = 0
-practice = 2
+practice = 3
 exercise = 0
 computer = 0
 tutoring = 0
@@ -329,6 +311,24 @@ practice = 0
 exercise = 0
 computer = 0
 tutoring = 2
+[[courses]]
+course_code = "COMP1009"
+credit = 2.0
+assessment_method = "考查"
+course_name = "计算思维与人工智能"
+recommended_year_semester = "第一学年春季"
+course_nature = "必修"
+course_category = "其他"
+offering_college = "计算机科学与技术学院"
+total_hours = 32
+
+[courses.hours]
+theory = 32
+lab = 0
+practice = 0
+exercise = 0
+computer = 0
+tutoring = 0
 [[courses]]
 course_code = "GEIP1016"
 credit = 2.5
@@ -446,10 +446,10 @@ recommended_year_semester = "第一学年夏季"
 course_nature = "必修"
 course_category = "其他"
 offering_college = "建筑学院"
-total_hours = 0
+total_hours = 40
 
 [courses.hours]
-theory = 40
+theory = 0
 lab = 0
 practice = 1
 exercise = 0
