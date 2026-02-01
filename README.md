@@ -1,6 +1,6 @@
-# hoa-majors
+# hoa-cli
 
-[![Build and Verify](https://github.com/HITSZ-OpenAuto/hoa-majors/actions/workflows/build.yml/badge.svg)](https://github.com/HITSZ-OpenAuto/hoa-majors/actions/workflows/build.yml)
+[![Build and Verify](https://github.com/HITSZ-OpenAuto/hoa-cli/actions/workflows/build.yml/badge.svg)](https://github.com/HITSZ-OpenAuto/hoa-cli/actions/workflows/build.yml)
 [![Python Version](https://img.shields.io/badge/python-3.14+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -11,7 +11,7 @@
 直接安装 CLI 工具到系统中：
 
 ```sh
-uv tool install git+https://github.com/HITSZ-OpenAuto/hoa-majors.git
+uv tool install git+https://github.com/HITSZ-OpenAuto/hoa-cli.git
 ```
 
 ## 快速开始
@@ -42,6 +42,6 @@ uv run hoa info <plan_id> <course_code>
 ```yaml
 steps:
   - uses: actions/checkout@v6
-  - uses: HITSZ-OpenAuto/hoa-majors@main
+  - uses: HITSZ-OpenAuto/hoa-cli@main
   - run: hoa plans
 ```

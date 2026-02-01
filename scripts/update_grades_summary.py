@@ -26,7 +26,7 @@ from typing import Any
 SOURCE_URL = (
     "https://raw.githubusercontent.com/HITSZ-OpenAuto/repos-management/main/grades_summary.toml"
 )
-OUT_PATH = Path(__file__).resolve().parents[1] / "src/hoa_majors/data/grades_summary.json"
+OUT_PATH = Path(__file__).resolve().parents[1] / "src/hoa_cli/data/grades_summary.json"
 
 PERCENT_RE = re.compile(r"(\d+%)")
 

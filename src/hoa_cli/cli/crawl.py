@@ -4,10 +4,10 @@ from pathlib import Path
 
 import toml
 
-from hoa_majors.config import DEFAULT_DATA_DIR, PLANS_SUBDIR, logger
-from hoa_majors.core.fetcher import fetch_courses_by_fah, get_fah_list, get_major_list_by_dalei
-from hoa_majors.core.parser import normalize_course
-from hoa_majors.core.writer import write_toml
+from hoa_cli.config import DEFAULT_DATA_DIR, PLANS_SUBDIR, logger
+from hoa_cli.core.fetcher import fetch_courses_by_fah, get_fah_list, get_major_list_by_dalei
+from hoa_cli.core.parser import normalize_course
+from hoa_cli.core.writer import write_toml
 
 
 def generate_toml_for_fah(fah: str, info: dict | None = None) -> dict:

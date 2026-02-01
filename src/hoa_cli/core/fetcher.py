@@ -2,7 +2,7 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-from hoa_majors.config import (
+from hoa_cli.config import (
     COURSE_URL,
     FAH_URL,
     HEADERS_FORM,

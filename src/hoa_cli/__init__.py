@@ -1,3 +1,3 @@
 from importlib.metadata import version
 
-__version__ = version("hoa-majors")
+__version__ = version("hoa-cli")

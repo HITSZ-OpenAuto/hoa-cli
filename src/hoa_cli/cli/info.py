@@ -3,8 +3,8 @@ import json
 import sys
 from pathlib import Path
 
-from hoa_majors.config import DEFAULT_DATA_DIR, logger
-from hoa_majors.core.utils import iter_toml_files
+from hoa_cli.config import DEFAULT_DATA_DIR, logger
+from hoa_cli.core.utils import iter_toml_files
 
 
 def _load_grades_summary(data_dir: Path) -> dict:

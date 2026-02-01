@@ -2,8 +2,8 @@ import argparse
 import sys
 from pathlib import Path
 
-from hoa_majors.config import DEFAULT_DATA_DIR, logger
-from hoa_majors.core.utils import iter_toml_files
+from hoa_cli.config import DEFAULT_DATA_DIR, logger
+from hoa_cli.core.utils import iter_toml_files
 
 
 def list_courses(plan_id: str, data_dir: Path):

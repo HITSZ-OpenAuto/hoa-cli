@@ -1,7 +1,7 @@
 import tomllib
 from pathlib import Path
 
-from hoa_majors.config import logger
+from hoa_cli.config import logger
 
 
 def load_lookup_table(data_dir: Path) -> dict:

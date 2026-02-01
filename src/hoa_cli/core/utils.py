@@ -3,7 +3,7 @@ from collections.abc import Generator
 from pathlib import Path
 from typing import Any
 
-from hoa_majors.config import PLANS_SUBDIR
+from hoa_cli.config import PLANS_SUBDIR
 
 
 def normalize_course_code(code: str) -> str:
