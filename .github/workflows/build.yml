@@ -37,7 +37,7 @@ jobs:
         run: uv run hoa plans
 
       - name: Smoke test - List courses
-        run: uv run hoa courses 037F075E27C4138CE0630B18F80A5AFE
+        run: uv run hoa courses BEB8D90DE1C870D2E0530B18F80A2908
 
       - name: Smoke test - Get course info
-        run: uv run hoa info 037F075E27C4138CE0630B18F80A5AFE COMP3010E
+        run: uv run hoa info BEB8D90DE1C870D2E0530B18F80A2908 ACCT2001
