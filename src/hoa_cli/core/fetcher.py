@@ -3,7 +3,9 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
 from hoa_cli.config import (
+    COURSE_GROUP_URL_POSTGRAD,
     COURSE_URL,
+    COURSE_URL_POSTGRAD,
     FAH_URL,
     HEADERS_FORM,
     HEADERS_JSON,
@@ -155,4 +157,104 @@ def get_major_list_by_dalei(yzydm: str, xn: str = "2024-2025", xq: str = "2") ->
         return [{k: v for k, v in item.items() if v is not None} for item in resp_json]
     except Exception as e:
         logger.error(f"查询大类 {yzydm} 的专业列表失败: {e}")
+        return []
+
+
+def get_postgrad_fah_list(bbh: str) -> list[dict]:
+    """
+    获取指定版本号的研究生培养方案列表
+    """
+    _ensure_cookie_warning()
+    data = {
+        "sf_request_type": "ajax",
+        "key": "",
+        "xkdm": "",
+        "yxdm": "",
+        "zydm": "",
+        "zyfxdm": "",
+        "bbh": bbh,
+        "ywdm": "",
+        "falx": "2",
+        "njdm": "",
+        "cxby": "",
+        "pylb": "2",
+        "order1": "",
+        "order2": "",
+        "falxdm": "",
+        "kzsjqx": "0",
+        "py_xssfcxzj_zx": "1",
+        "py_xssfcxzj_fx": "1",
+        "sfdl": "",
+        "pageNum": "1",
+        "pageSize": "500",
+    }
+
+    try:
+        resp = _session.post(FAH_URL, headers=HEADERS_FORM, data=data, timeout=15)
+        resp.raise_for_status()
+        resp_json = resp.json()
+        raw_list = resp_json.get("content", {}).get("list", [])
+        return [{k: v for k, v in item.items() if v is not None} for item in raw_list]
+    except Exception as e:
+        logger.error(f"获取版本 {bbh} 的研究生培养方案列表失败: {e}")
+        return []
+
+
+def get_postgrad_course_groups(fah: str, bgid: str = "") -> list[dict]:
+    """
+    获取研究生培养方案下的课组列表
+    """
+    _ensure_cookie_warning()
+    payload = {
+        "fah": fah,
+        "bgid": bgid,
+        "pylb": "2",
+        "sfcx": "",
+    }
+
+    try:
+        resp = _session.post(
+            COURSE_GROUP_URL_POSTGRAD, headers=HEADERS_FORM, data=payload, timeout=15
+        )
+        resp.raise_for_status()
+        resp_json = resp.json()
+        raw_list = resp_json.get("content", [])
+        return [{k: v for k, v in item.items() if v is not None} for item in raw_list]
+    except Exception as e:
+        logger.error(f"获取研究生培养方案 {fah} 的课组失败: {e}")
+        return []
+
+
+def fetch_postgrad_courses_by_group(
+    fah: str, kzid: str, zyfx: str = "", bgid: str = ""
+) -> list[dict]:
+    """
+    根据培养方案号、课组 ID 和专业方向代码获取研究生课程列表
+    """
+    _ensure_cookie_warning()
+    payload = {
+        "sfcx": "",
+        "pylx": "2",
+        "pylb": "2",
+        "fah": fah,
+        "bgid": bgid,
+        "kzid": kzid,
+        "kcmc": "",
+        "zyfx": zyfx,
+        "yxdm": "",
+        "xqdm": "",
+        "order1": "",
+        "order2": "",
+        "pageNum": 1,
+        "pageSize": 999,
+    }
+
+    try:
+        resp = _session.post(COURSE_URL_POSTGRAD, headers=HEADERS_FORM, data=payload, timeout=15)
+        resp.raise_for_status()
+        resp_json = resp.json()
+        raw_list = resp_json.get("content", {}).get("list", [])
+        return [{k: v for k, v in item.items() if v is not None} for item in raw_list]
+    except Exception as e:
+        logger.error(f"获取研究生培养方案 {fah} 的课组 {kzid} 课程失败: {e}")
         return []

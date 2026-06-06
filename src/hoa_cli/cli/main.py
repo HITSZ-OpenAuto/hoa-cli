@@ -3,7 +3,7 @@ import sys
 from pathlib import Path
 
 from hoa_cli import __version__
-from hoa_cli.cli import courses, crawl, info, plans, repo
+from hoa_cli.cli import courses, crawl, crawl_postgrad, info, plans, repo
 from hoa_cli.config import DEFAULT_DATA_DIR, logger
 
 
@@ -28,6 +28,23 @@ def main():
         "--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录"
     )
 
+    # crawl-postgrad
+    crawl_postgrad_parser = subparsers.add_parser(
+        "crawl-postgrad", help="抓取研究生培养方案与课程数据"
+    )
+    crawl_postgrad_parser.add_argument(
+        "--bbh", nargs="+", required=True, help="要抓取的版本号列表，如 202509"
+    )
+    crawl_postgrad_parser.add_argument(
+        "--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录"
+    )
+    crawl_postgrad_parser.add_argument(
+        "--mapping-file",
+        type=Path,
+        default=None,
+        help="研究生映射文件输出路径，默认写入 {data_dir}/postgrad_mapping.json",
+    )
+
     # plans
     plans_parser = subparsers.add_parser("plans", help="列出所有已抓取的培养方案")
     plans_parser.add_argument(
@@ -50,9 +67,7 @@ def main():
         action="store_true",
         help="以纯 JSON 输出（仅输出课程与成绩构成等信息，不含格式化文本）",
     )
-    info_parser.add_argument(
-        "--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录"
-    )
+    info_parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR, help="数据存储目录")
 
     # repo
     repo_parser = subparsers.add_parser("repo", help="获取课程对应的 OpenAuto 仓库 ID")
@@ -73,6 +88,8 @@ def main():
         logger.info("开始抓取课程详细数据")
         crawl.crawl_courses(mapping_file, args.data_dir)
         logger.info("抓取任务完成")
+    elif args.command == "crawl-postgrad":
+        crawl_postgrad.run(args.bbh, args.data_dir, mapping_file=args.mapping_file)
     elif args.command == "plans":
         plans.list_plans(args.data_dir)
     elif args.command == "courses":

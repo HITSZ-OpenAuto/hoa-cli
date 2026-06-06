@@ -82,6 +82,12 @@ FAH_URL = "https://jw.hitsz.edu.cn/faxq/query?sf_request_type=ajax"
 # 课程列表查询
 COURSE_URL = "https://jw.hitsz.edu.cn/Njpyfakc/queryList?sf_request_type=ajax"
 
+# 研究生课组查询
+COURSE_GROUP_URL_POSTGRAD = "https://jw.hitsz.edu.cn/Zdxpyfakz/queryKzTree?sf_request_type=ajax"
+
+# 研究生课程列表查询
+COURSE_URL_POSTGRAD = "https://jw.hitsz.edu.cn/Zdxpyfakz/queryFaKzkc?sf_request_type=ajax"
+
 # 大类专业列表查询
 MAJOR_LIST_URL = "https://jw.hitsz.edu.cn/xjgl/dlfzysq/querydlzyd?sf_request_type=ajax"
 

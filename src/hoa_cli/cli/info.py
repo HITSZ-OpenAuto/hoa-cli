@@ -62,7 +62,12 @@ def _select_grade_details(
         if k in entry and isinstance(entry.get(k), list) and entry.get(k):
             return entry.get(k), k
 
-    if year_default_key and year_default_key in entry and isinstance(entry.get(year_default_key), list) and entry.get(year_default_key):
+    if (
+        year_default_key
+        and year_default_key in entry
+        and isinstance(entry.get(year_default_key), list)
+        and entry.get(year_default_key)
+    ):
         return entry.get(year_default_key), year_default_key
 
     if "default" in entry and isinstance(entry.get("default"), list) and entry.get("default"):
@@ -174,9 +179,7 @@ def get_course_info(plan_id: str, course_code: str, data_dir: Path, as_json: boo
                         ]
                         for h_key, h_label in hour_order:
                             if h_key in course["hours"]:
-                                print(
-                                    f"{h_label:<{label_width}} : {course['hours'].get(h_key)}"
-                                )
+                                print(f"{h_label:<{label_width}} : {course['hours'].get(h_key)}")
 
                     # Append grade details if we can find a matching summary entry.
                     _print_grade_details(
