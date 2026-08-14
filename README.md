@@ -64,6 +64,9 @@ uv run hoa crawl-postgrad --bbh 202509
 - 研究生专业映射文件：`src/hoa_cli/data/postgrad_mapping.json`
 - 研究生培养方案课程文件：`src/hoa_cli/data/plans/{bbh}_研_{专业名}.toml`
 
+名称包含“留学生”的培养方案不会进入研究生课程文件。正式抓取使用严格请求模式；
+映射、课组或课程请求失败时会立即中止，避免以空数据或部分数据覆盖已有文件。
+
 如果只想重抓少数几个研究生专业，可使用仓库内的辅助脚本：
 
 ```sh
@@ -71,6 +74,28 @@ PYTHONPATH=src python scripts/rebuild_postgrad_majors.py --bbh 202509 --major-co
 ```
 
 该脚本会复用当前研究生抓取逻辑，只重建指定 `major_code` 对应的 TOML 文件。
+
+在调整研究生专业选修模块过滤规则前，可先运行只读审计脚本：
+
+```sh
+PYTHONPATH=src python scripts/audit_postgrad_modules.py --bbh 202509
+```
+
+脚本默认扫描原始课组树及所有叶子课组的课程结果，排除名称含“留学生”的培养方案，
+并输出带时间戳的新报告（如 `postgrad_module_audit_202509_20260814-191500.json`）。报告会区分课组树中直接发现的模块、仅在课程
+`kzmc` 中发现的隐式模块、推荐/其他模块关系以及涉及的专业和培养方案。使用 `--tree-only`
+可进行较快但不完整的课组树扫描，使用 `--major-codes 0810 085402` 可限制审计范围。
+如果任一培养方案无法获取课组树，报告会标记 `complete = false`、记录 `issues` 并以非零状态退出。
+
+脚本在每份培养方案完成后原子更新报告。中断后使用与原命令相同的筛选参数，并通过
+`--resume <报告路径>` 断点续跑。`--output` 只用于创建新报告，目标已存在时会拒绝覆盖；
+只有显式使用 `--resume` 才会更新已有的 `schema_version = 2` 检查点。
+
+```sh
+PYTHONPATH=src python scripts/audit_postgrad_modules.py \
+  --bbh 202509 --major-codes 0810 085402 \
+  --resume postgrad_module_audit_202509_20260814-191500.json
+```
 
 ## GitHub Action
 

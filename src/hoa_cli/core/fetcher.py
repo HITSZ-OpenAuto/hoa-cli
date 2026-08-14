@@ -160,7 +160,7 @@ def get_major_list_by_dalei(yzydm: str, xn: str = "2024-2025", xq: str = "2") ->
         return []
 
 
-def get_postgrad_fah_list(bbh: str) -> list[dict]:
+def get_postgrad_fah_list(bbh: str, *, strict: bool = False) -> list[dict]:
     """
     获取指定版本号的研究生培养方案列表
     """
@@ -197,10 +197,12 @@ def get_postgrad_fah_list(bbh: str) -> list[dict]:
         return [{k: v for k, v in item.items() if v is not None} for item in raw_list]
     except Exception as e:
         logger.error(f"获取版本 {bbh} 的研究生培养方案列表失败: {e}")
+        if strict:
+            raise
         return []
 
 
-def get_postgrad_course_groups(fah: str, bgid: str = "") -> list[dict]:
+def get_postgrad_course_groups(fah: str, bgid: str = "", *, strict: bool = False) -> list[dict]:
     """
     获取研究生培养方案下的课组列表
     """
@@ -222,11 +224,13 @@ def get_postgrad_course_groups(fah: str, bgid: str = "") -> list[dict]:
         return [{k: v for k, v in item.items() if v is not None} for item in raw_list]
     except Exception as e:
         logger.error(f"获取研究生培养方案 {fah} 的课组失败: {e}")
+        if strict:
+            raise
         return []
 
 
 def fetch_postgrad_courses_by_group(
-    fah: str, kzid: str, zyfx: str = "", bgid: str = ""
+    fah: str, kzid: str, zyfx: str = "", bgid: str = "", *, strict: bool = False
 ) -> list[dict]:
     """
     根据培养方案号、课组 ID 和专业方向代码获取研究生课程列表
@@ -257,4 +261,6 @@ def fetch_postgrad_courses_by_group(
         return [{k: v for k, v in item.items() if v is not None} for item in raw_list]
     except Exception as e:
         logger.error(f"获取研究生培养方案 {fah} 的课组 {kzid} 课程失败: {e}")
+        if strict:
+            raise
         return []

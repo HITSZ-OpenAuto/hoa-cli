@@ -8,6 +8,50 @@ from hoa_cli.core.parser import normalize_course
 
 EXCLUDED_GROUP_NAMES = {"推荐选修课模块", "其他选修课模块"}
 EXCLUDED_GROUP_KEYWORDS = ("模块", "选修课程清单")
+POSTGRAD_MODULE_CONTAINERS = {
+    "推荐选修课模块": "recommended",
+    "其他选修课模块": "other",
+}
+
+
+def normalize_postgrad_module_name(group_name: str) -> str:
+    """Normalize a module label for stable audit deduplication."""
+    normalized = re.sub(r"\s+", "", group_name.strip()).replace(":", "：")
+    normalized = normalized.replace("选修课清单", "选修课程清单")
+    return normalized.rstrip("。")
+
+
+def is_postgrad_elective_module_name(group_name: str) -> bool:
+    """Return whether a label looks like a concrete postgrad elective module list."""
+    normalized = normalize_postgrad_module_name(group_name)
+    return (
+        normalized not in POSTGRAD_MODULE_CONTAINERS
+        and "模块" in normalized
+        and ("选修课程清单" in normalized or "选修课清单" in normalized)
+    )
+
+
+def extract_postgrad_module_code(group_name: str) -> str:
+    """Extract the short code before ``模块`` when the source exposes one."""
+    normalized = normalize_postgrad_module_name(group_name)
+    match = re.match(r"^([^：]+?)模块(?:：|$)", normalized)
+    return match.group(1).strip() if match else ""
+
+
+def derive_postgrad_degree_levels(*labels: str) -> list[str]:
+    """Infer master/doctor applicability from module or plan labels."""
+    combined = " ".join(label for label in labels if label)
+    levels: list[str] = []
+    if "硕" in combined:
+        levels.append("master")
+    if "博" in combined:
+        levels.append("doctor")
+    return levels
+
+
+def is_international_postgrad_plan_name(plan_name: str) -> bool:
+    """Return whether a plan is explicitly intended for international students."""
+    return "留学生" in plan_name
 
 
 def derive_major_code(item: dict[str, Any]) -> str:
