@@ -12,6 +12,7 @@ from hoa_cli.core.fetcher import (
 from hoa_cli.core.postgrad import (
     build_postgrad_mapping,
     derive_postgrad_zyfx,
+    is_international_postgrad_plan_name,
     merge_postgrad_courses,
     select_leaf_group_ids,
     should_exclude_course_item,
@@ -25,7 +26,7 @@ def build_postgrad_mappings(bbhs: list[str], output_path: Path) -> dict[str, dic
 
     for bbh in bbhs:
         logger.info(f"正在处理研究生版本: {bbh}")
-        raw_plans = get_postgrad_fah_list(bbh)
+        raw_plans = get_postgrad_fah_list(bbh, strict=True)
         all_mappings[bbh] = build_postgrad_mapping(raw_plans)
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -51,21 +52,29 @@ def _clean_filename_component(value: str) -> str:
     return value.replace("/", "-").replace("\\", "-").strip()
 
 
-def _build_postgrad_info(bbh: str, major_entry: dict[str, object]) -> dict[str, object]:
+def _included_postgrad_plans(major_entry: dict[str, object]) -> list[dict]:
     plans = major_entry.get("plans", [])
+    if not isinstance(plans, list):
+        return []
+    return [
+        plan
+        for plan in plans
+        if isinstance(plan, dict)
+        and not is_international_postgrad_plan_name(str(plan.get("name") or ""))
+    ]
+
+
+def _build_postgrad_info(bbh: str, major_entry: dict[str, object]) -> dict[str, object]:
     source_plan_ids: list[str] = []
     source_plan_names: list[str] = []
 
-    if isinstance(plans, list):
-        for plan in plans:
-            if not isinstance(plan, dict):
-                continue
-            plan_id = str(plan.get("plan_id") or "").strip()
-            plan_name = str(plan.get("name") or "").strip()
-            if plan_id and plan_id not in source_plan_ids:
-                source_plan_ids.append(plan_id)
-            if plan_name and plan_name not in source_plan_names:
-                source_plan_names.append(plan_name)
+    for plan in _included_postgrad_plans(major_entry):
+        plan_id = str(plan.get("plan_id") or "").strip()
+        plan_name = str(plan.get("name") or "").strip()
+        if plan_id and plan_id not in source_plan_ids:
+            source_plan_ids.append(plan_id)
+        if plan_name and plan_name not in source_plan_names:
+            source_plan_names.append(plan_name)
 
     return {
         "study_level": "postgrad",
@@ -112,27 +121,19 @@ def _collect_courses_for_major(major_entry: dict[str, object]) -> list[dict]:
     major_code = str(major_entry.get("major_code") or "").strip()
     zyfx = derive_postgrad_zyfx(major_code)
     all_raw_courses: list[dict] = []
-    plans = major_entry.get("plans", [])
-
-    if not isinstance(plans, list):
-        return []
-
-    for plan in plans:
-        if not isinstance(plan, dict):
-            continue
-
+    for plan in _included_postgrad_plans(major_entry):
         plan_id = str(plan.get("plan_id") or "").strip()
         bgid = str(plan.get("bgid") or "").strip()
         if not plan_id:
             continue
 
-        course_groups = get_postgrad_course_groups(plan_id, bgid=bgid)
+        course_groups = get_postgrad_course_groups(plan_id, bgid=bgid, strict=True)
         leaf_group_ids = select_leaf_group_ids(course_groups)
         logger.info(f"研究生培养方案 {plan_id} 筛得叶子课组 {len(leaf_group_ids)} 个")
 
         for leaf_group_id in leaf_group_ids:
             raw_courses = fetch_postgrad_courses_by_group(
-                plan_id, leaf_group_id, zyfx=zyfx, bgid=bgid
+                plan_id, leaf_group_id, zyfx=zyfx, bgid=bgid, strict=True
             )
             # 第二层过滤：课程级 kzmc 检查。第一层 select_leaf_group_ids 已按
             # 课组名排除了应跳过的分支，但 API 返回的课组树中存在扁平"选修课"
